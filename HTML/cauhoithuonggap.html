@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!--Thư viện icon-->
+    <link rel="stylesheet" href="../CSS/cauhoithuonggap.css">
+    <link rel="shortcut icon" href="../img/H_1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../Bootstrap/jquery-3.7.1.js"></script>
+    <title>Câu hỏi thường gặp</title>
+</head>
+<body>
+    <div class="container-fluid p-0 min-vh-100">
+        <div class="header header1 w-100">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a href="../HTML/home.html" class="navbar-brand">
+                        <img class="img-fluid" src="../img/H-removebg-preview.png" alt="DoubleH Shop" style="max-height: 40px;">
+                    </a>
+        
+                    <!-- Mobile Toggle Button -->
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- Main Navbar Content -->
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <!-- Search Bar - Visible on desktop -->
+                        <div class="d-none d-lg-block ms-3 me-auto">
+                            <form class="d-flex">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-secondary" placeholder="Bạn cần tìm gì..." aria-label="Search">
+                                    <button class="btn btn-outline-secondary" type="submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+        
+                        <!-- Top Navigation Links -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom d-flex align-items-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill me-1" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                    </svg>
+                                    Liên hệ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom d-flex align-items-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill me-1" viewBox="0 0 16 16">
+                                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                    </svg>
+                                    Cửa hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom d-flex align-items-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill me-1" viewBox="0 0 16 16">
+                                        <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                    </svg>
+                                    Đơn hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom d-flex align-items-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill me-1" viewBox="0 0 16 16">
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                    </svg>
+                                    Giỏ hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom d-flex align-items-center" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle me-1" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                    </svg>
+                                    Tài khoản
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Secondary Navigation -->
+        <div class="container-fluid bg-primary py-2 d-none d-lg-block">
+            <div class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom1 text-white" href="../HTML/home.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom1 text-white" href="../HTML/gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-custom1 dropdown-toggle text-white" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light dropdown-mega">
+                            <div class="row mx-0">
+                                <div class="col-md-3">
+                                    <h6 class="dropdown-header">Phụ kiện di động</h6>
+                                    <a class="dropdown-item" href="#">Sạc dự phòng</a>
+                                    <a class="dropdown-item" href="#">Cáp sạc</a>
+                                    <a class="dropdown-item" href="#">Miếng dán</a>
+                                    <a class="dropdown-item" href="#">Ốp lưng</a>
+                                    <a class="dropdown-item" href="#">Túi đựng AirPod</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <h6 class="dropdown-header">Thiết bị âm thanh</h6>
+                                    <a class="dropdown-item" href="#">Tai nghe bluetooth</a>
+                                    <a class="dropdown-item" href="#">Tai nghe dây</a>
+                                    <a class="dropdown-item" href="#">Tai nghe chụp tai</a>
+                                    <a class="dropdown-item" href="#">Loa</a>
+                                    <a class="dropdown-item" href="#">Micro</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <h6 class="dropdown-header">Phụ kiện laptop</h6>
+                                    <a class="dropdown-item" href="#">Cap chuyển đổi</a>
+                                    <a class="dropdown-item" href="#">Chuột</a>
+                                    <a class="dropdown-item" href="#">Bàn phím</a>
+                                    <a class="dropdown-item" href="#">Túi chống sốc</a>
+                                    <a class="dropdown-item" href="#">Giá đỡ</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <h6 class="dropdown-header">Thương hiệu</h6>
+                                    <a class="dropdown-item" href="#">Apple</a>
+                                    <a class="dropdown-item" href="#">Samsung</a>
+                                    <a class="dropdown-item" href="#">Xiaomi</a>
+                                    <a class="dropdown-item" href="#">Hoco</a>
+                                    <a class="dropdown-item" href="#">Anker</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom1 text-white" href="#">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom1 text-white" href="../HTML/cauhoithuonggap.html">Câu hỏi thường gặp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom1 text-white" href="#">Đặt trước</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom1 text-white" href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Mobile Search - Hidden on desktop -->
+        <div class="container-fluid bg-dark py-2 d-lg-none">
+            <div class="container">
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- section -->
+        
+        <div class="section min-vh-75">
+            <div class="container mt-5 bg-light p-3 box">
+                <header class="faq-header text-center">
+                    <div class="container">
+                        <h1 class="faq-title">Hỏi Đáp</h1>
+                        <p class="lead">Tìm câu trả lời cho những thắc mắc thường gặp</p>
+                    </div>
+                </header>
+            
+                <!-- Main Content -->
+                <main class="container mb-5">
+                    <!-- Tài khoản Section -->
+                    <section class="faq-category">
+                        <h2 class="category-title">Hỏi đáp về tài khoản</h2>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">1. Làm thế nào để tôi trở thành thành viên của DoubleH?</h3>
+                            <div class="faq-answer">
+                                <p>Quý khách vui lòng nhấn vào nút "Đăng ký" ở thanh menu trên cùng của màn hình (Đối với Desktop) hoặc tại góc trái màn hình, chọn biểu tượng Menu rồi chọn "Đăng ký" (Đối với Mobile).</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">2. Tại sao tôi không thể đăng nhập vào tài khoản của tôi?</h3>
+                            <div class="faq-answer">
+                                <p>Vui lòng kiểm tra lại tên đăng nhập và mật khẩu. Nếu vẫn không thể đăng nhập, quý khách có thể sử dụng tính năng "Quên mật khẩu" hoặc liên hệ hotline 1900 6750 để được hỗ trợ.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">3. Tôi có thể sử dụng chung tài khoản với người khác được không?</h3>
+                            <div class="faq-answer">
+                                <p>Mỗi tài khoản tại DoubleH chỉ nên được sử dụng bởi một người duy nhất để đảm bảo quyền lợi tích lũy điểm và bảo mật thông tin.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">4. Tại sao tôi nên đăng ký thành viên DoubleH?</h3>
+                            <div class="faq-answer">
+                                <p>Thành viên DoubleH sẽ được hưởng nhiều ưu đãi đặc biệt như tích lũy điểm đổi quà, giảm giá cho thành viên, nhận thông báo khuyến mãi sớm nhất và nhiều đặc quyền khác.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">5. DoubleH có chương trình ưu đãi nào hấp dẫn dành cho khách hàng thân thiết?</h3>
+                            <div class="faq-answer">
+                                <p>DoubleH có nhiều chương trình ưu đãi dành riêng cho khách hàng thân thiết như giảm giá theo cấp độ thành viên, voucher sinh nhật, ưu đãi đặc biệt trong các dịp lễ và tích lũy điểm đổi quà giá trị.</p>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <!-- Đặt hàng Section -->
+                    <section class="faq-category">
+                        <h2 class="category-title">Hỏi đáp về đặt hàng</h2>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">1. Tôi có thể đặt hàng bằng những hình thức nào?</h3>
+                            <div class="faq-answer">
+                                <p>Quý khách có thể mua hàng tại DoubleH bằng những hình thức sau:</p>
+                                <ul>
+                                    <li>Đặt hàng trực tuyến tại website</li>
+                                    <li>Đặt hàng trực tiếp với tư vấn viên qua Hotline 1900 6750</li>
+                                    <li>Đặt hàng trực tuyến trên các sàn thương mại điện tử</li>
+                                    <li>Mua hàng trực tiếp tại các hệ thống cửa hàng</li>
+                                </ul>
+                                <p>DoubleH luôn khuyến khích quý khách tạo tài khoản và đặt hàng online để được hưởng các chính sách ưu đãi thành viên tốt hơn.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">2. Tôi cần hỗ trợ mua hàng, làm cách nào để liên hệ với tư vấn viên?</h3>
+                            <div class="faq-answer">
+                                <p>Quý khách có thể liên hệ với đội ngũ tư vấn viên của chúng tôi qua hotline 1900 6750 (miễn phí) hoặc chat trực tiếp trên website từ 8:00 - 21:00 hàng ngày.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">3. DoubleH có giới hạn về số lượng sản phẩm khi đặt hàng không?</h3>
+                            <div class="faq-answer">
+                                <p>Tùy thuộc vào từng chương trình khuyến mãi, một số sản phẩm có thể có giới hạn số lượng mua để đảm bảo công bằng cho tất cả khách hàng. Thông tin này sẽ được ghi rõ trên trang sản phẩm.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">4. Tôi muốn xem lại lịch sử đơn hàng đã mua?</h3>
+                            <div class="faq-answer">
+                                <p>Quý khách có thể xem lịch sử đơn hàng bằng cách đăng nhập tài khoản và vào mục "Lịch sử đơn hàng" trong phần tài khoản cá nhân.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">5. Tôi cần làm gì để thay đổi hoặc hủy bỏ đơn hàng đã đặt?</h3>
+                            <div class="faq-answer">
+                                <p>Quý khách vui lòng liên hệ ngay với chúng tôi qua hotline 1900 6750 để được hỗ trợ thay đổi hoặc hủy đơn hàng. Lưu ý chỉ có thể hủy đơn khi chưa được xử lý giao hàng.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">6. Tôi muốn khiếu nại/đổi trả hàng, quy trình thực hiện như thế nào?</h3>
+                            <div class="faq-answer">
+                                <p>Quý khách vui lòng liên hệ bộ phận chăm sóc khách hàng trong vòng 7 ngày kể từ khi nhận hàng. Chúng tôi sẽ hướng dẫn quý khách các bước khiếu nại/đổi trả theo chính sách bảo hành của DoubleH.</p>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <!-- Thanh toán Section -->
+                    <section class="faq-category">
+                        <h2 class="category-title">Hỏi đáp về thanh toán</h2>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">1. Tôi có thể thanh toán đơn hàng bằng những hình thức nào?</h3>
+                            <div class="faq-answer">
+                                <p>Quý khách có thể thanh toán cho DoubleH bằng những hình thức sau:</p>
+                                <ul>
+                                    <li>Thanh toán tại chỗ (Ship COD)</li>
+                                    <li>Chuyển khoản trước: Khách hàng có thể chọn chuyển khoản trước vào tài khoản của DoubleH</li>
+                                    <li>Thanh toán qua ví điện tử (Momo, ZaloPay, VNPay)</li>
+                                    <li>Thanh toán bằng thẻ tín dụng/quốc tế</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <!-- Giao hàng Section -->
+                    <section class="faq-category">
+                        <h2 class="category-title">Hỏi đáp về giao hàng</h2>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">1. Tôi không ở Hồ Chí Minh, DoubleH có hỗ trợ giao hàng không?</h3>
+                            <div class="faq-answer">
+                                <p>DoubleH áp dụng giao hàng trên toàn quốc cho tất cả giá trị đơn hàng. Phí vận chuyển và thời gian giao hàng sẽ thay đổi tùy thuộc vào giá trị đơn hàng và từng khu vực cụ thể.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">2. Tôi có được hỗ trợ phí vận chuyển không?</h3>
+                            <div class="faq-answer">
+                                <p>DoubleH thường xuyên có chương trình miễn phí vận chuyển cho đơn hàng từ 500.000đ trở lên. Chi tiết các chương trình ưu đãi sẽ được cập nhật trên website.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">3. Bao lâu thì tôi sẽ nhận được sản phẩm sau khi hoàn tất đặt hàng?</h3>
+                            <div class="faq-answer">
+                                <p>Thời gian giao hàng dự kiến:
+                                <ul>
+                                    <li>Nội thành Hồ Chí Minh: 1-2 ngày làm việc</li>
+                                    <li>Các tỉnh thành khác: 2-5 ngày làm việc tùy khu vực</li>
+                                </ul>
+                                Thời gian có thể thay đổi trong các dịp lễ, Tết hoặc do ảnh hưởng của thời tiết.</p>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <!-- Question Form -->
+                    <section class="question-form">
+                        <h2 class="text-center mb-4">Gửi câu hỏi của bạn</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Họ và tên</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Số điện thoại</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="category" class="form-label">Chủ đề câu hỏi</label>
+                                <select class="form-select" id="category">
+                                    <option value="account">Tài khoản</option>
+                                    <option value="order">Đặt hàng</option>
+                                    <option value="payment">Thanh toán</option>
+                                    <option value="delivery">Giao hàng</option>
+                                    <option value="other">Khác</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="question" class="form-label">Nội dung câu hỏi</label>
+                                <textarea class="form-control" id="question" rows="4" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary px-4 py-2">Gửi câu hỏi</button>
+                            </div>
+                        </form>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer container-fluid text-white pt-5 pb-3" id="foot">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Cột chính sách -->
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Chính sách</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="../HTML/chinhsachthanhvien.html" class="text-white-50 text-decoration-none hover-text-primary">Chính sách thành viên</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Chính sách thanh toán</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Chính sách bảo hành</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Bảo mật thông tin</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Cột hỗ trợ -->
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Hỗ trợ</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn mua hàng</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn thanh toán</a></li>
+                            <li class="mb-2"><a href="../HTML/cauhoithuonggap.html" class="text-white-50 text-decoration-none hover-text-primary">Câu hỏi thường gặp</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Tra cứu bảo hành</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Cột danh mục -->
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Danh mục</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hãng Apple</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hãng Xiaomi</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Tai nghe bluetooth</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Phụ kiện laptop</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Cột liên hệ -->
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Liên hệ</h5>
+                        <div class="mb-3">
+                            <p class="mb-1 fw-semibold">Hotline: <a href="tel:0339978579" class="text-white text-decoration-none">033.997.8579</a></p>
+                            <p class="mb-1">Email: <a href="mailto:nguyenvantuan17102001@gmail.com" class="text-white-50 text-decoration-none">nguyenvantuan17102001@gmail.com</a></p>
+                            <p><strong>Địa chỉ: </strong>13 Nguyễn Văn Bảo, phường 4, quận Gò Vấp</p>
+                        </div>
+                        
+                        <h6 class="fw-bold mb-3">Kết nối với chúng tôi</h6>
+                        <div class="social-icons d-flex">
+                            <a href="https://www.facebook.com/huybotuoi" target="_blank" class="text-white me-3 hover-scale">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank" class="text-white me-3 hover-scale">
+                                <i class="fab fa-youtube fa-lg"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-white me-3 hover-scale">
+                                <i class="fab fa-tiktok fa-lg"></i>
+                            </a>
+                            <a href="#" target="_blank" class="text-white hover-scale">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Phần bản quyền -->
+                <div class="row mt-5 pt-3 border-top">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0 text-white-50">© 2023 DoubleH Shop. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0 text-white-50">Designed by <span class="text-primary">Nguyễn Nhất Huy & Nguyễn Tấn Hùng</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

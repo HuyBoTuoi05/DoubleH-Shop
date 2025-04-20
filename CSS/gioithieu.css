@@ -1,0 +1,251 @@
+.dropdown-mega {
+    left: 0;
+    right: 0;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 600px;
+}
+
+.dropdown-item{
+    padding: 0;
+}
+.navbar-dark {
+    background-color: antiquewhite !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: #6c757d; /* Màu viền */
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(108, 117, 125, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.bg-primary {
+    background-color: #6e91b5 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(48, 5, 83);
+}
+
+.nav-link-custom {
+    transition: all 0.3s ease;
+}
+.nav-link-custom:hover {
+    color: #0066cc !important;
+    transform: translateY(-2px); /* Hiệu ứng nổi lên nhẹ */
+}
+.nav-link-custom1 {
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+.nav-link-custom1:hover {
+    color: rgb(34, 25, 67) !important;
+    transform: translateY(-2px); /* Hiệu ứng nổi lên nhẹ */
+}
+
+.nav-link-custom:hover svg {
+    fill: #0066cc; /* Màu icon khi hover */
+    transform: scale(1.1); /* Phóng to icon nhẹ */
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-top: 10px;
+    }
+    
+    .nav-item {
+        margin-bottom: 5px;
+    }
+    
+    .dropdown-mega .row {
+        display: block;
+    }
+    
+    .dropdown-mega .col-md-3 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+nav, .navbar, .header1 {
+    overflow: visible !important;
+    position: relative;
+    z-index: 100;
+}
+.dropdown-menu .dropdown-column {
+    flex: 2;
+    min-width: 180px;
+    padding: 0 10px;
+}
+.dropdown-menu .dropdown-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+
+/* footer */
+.footer {
+    background: linear-gradient(90deg, #1e1e2f, #2d2d44);
+}
+.hover-text-primary:hover {
+    color: #0d6efd !important;
+    transition: color 0.3s ease;
+}
+
+.hover-scale {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.2);
+}
+
+.border-bottom {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/*                  ------------Thay đổi từ đây-------------                    */
+/*                  ------------Thay đổi từ đây-------------                    */
+/*                  ------------Thay đổi từ đây-------------                    */
+
+.box{
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1),5px 5px 15px rgba(0, 0, 0, 0.1),-5px -5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #333;
+    --light-color: #f8f9fa;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
+.about-section {
+    padding: 5rem 0;
+}
+
+.feature-box {
+    padding: 2.5rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.mission-section {
+    background-color: var(--light-color);
+    padding: 5rem 0;
+}
+
+.team-section {
+    padding: 5rem 0;
+}
+
+.team-member {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.cta-section {
+    background-color: rgb(231, 206, 252);
+    color: black;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}

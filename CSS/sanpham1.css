@@ -1,65 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container{
-    width: 100%;
-    background-color: #fff; 
-}
-body{
-    overflow-y: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-}
-.header1{
-    background-image: linear-gradient(#000000,#080075);
-    border-bottom: 2px solid;
-}
-.navbar{
-    font-size: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden; /* Ngăn bị tràn ra ngoài */
-}
-.nav-item {
-    min-width: 80px; /*giới hạn nhỏ nhất cho mỗi phần tử */
-    font-size: clamp(12px, 2vw, 16px); /* Tự động co giãn chữ */
-}
-
-.search-smart button{
-    background-color: #fff; 
-    border: 1px solid #ccc; 
-    border-left: none;
-}
-#nav1 a{
-    color: #fff;
-}
-#nav1 a:hover{
-    color: #fff532;
-}
-#nav2 li{
-    margin-right: 30px;
-}
-#nav2 li a{
-    color: #000000;
-    font-weight: 700;
-}
-#nav2 li a:hover{
-    color: #0032a5;
-    font-weight: 700;
-}
-
-.nav-item.dropdown .dropdown-menu {
+.dropdown-mega {
+    left: 0;
+    right: 0;
     display: none;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease;
-    position: absolute;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 600px;
+}
+
+.dropdown-item{
+    padding: 0;
+}
+.navbar-dark {
+    background-color: antiquewhite !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: #6c757d; /* Màu viền */
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(108, 117, 125, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.bg-primary {
+    background-color: #6e91b5 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(48, 5, 83);
+}
+
+.nav-link-custom {
+    transition: all 0.3s ease;
+}
+.nav-link-custom:hover {
+    color: #0066cc !important;
+    transform: translateY(-2px); /* Hiệu ứng nổi lên nhẹ */
+}
+.nav-link-custom1 {
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+.nav-link-custom1:hover {
+    color: rgb(34, 25, 67) !important;
+    transform: translateY(-2px); /* Hiệu ứng nổi lên nhẹ */
+}
+
+.nav-link-custom:hover svg {
+    fill: #0066cc; /* Màu icon khi hover */
+    transform: scale(1.1); /* Phóng to icon nhẹ */
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-top: 10px;
+    }
+    
+    .nav-item {
+        margin-bottom: 5px;
+    }
+    
+    .dropdown-mega .row {
+        display: block;
+    }
+    
+    .dropdown-mega .col-md-3 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
     display: block;
     opacity: 1;
     visibility: visible;
@@ -69,15 +86,8 @@ nav, .navbar, .header1 {
     position: relative;
     z-index: 100;
 }
-.dropdown-menu {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px; /* hoặc auto, hoặc tùy theo nội dung */
-    padding: 10px;
-}
-
 .dropdown-menu .dropdown-column {
-    flex: 1;
+    flex: 2;
     min-width: 180px;
     padding: 0 10px;
 }
@@ -87,26 +97,38 @@ nav, .navbar, .header1 {
     margin-bottom: 5px;
     padding: 5px 0;
 }
-#foot{
-    background-color: white;
+
+/* footer */
+.footer {
+    background: linear-gradient(90deg, #1e1e2f, #2d2d44);
+}
+.hover-text-primary:hover {
+    color: #0d6efd !important;
+    transition: color 0.3s ease;
 }
 
-#foot p{
-    margin: 0;
-    padding: 0;
-}
-#foot h4{
-    color: blue;
-}
-#foot a{
-    text-decoration: none;
-}
-#foot .row{
-    padding-top: 10px;
-    margin-top: 20px;
+.hover-scale {
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
-/* Thay đổi từ đây */
+.hover-scale:hover {
+    transform: scale(1.2);
+}
+
+.border-bottom {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+
+/*                  ------------Thay đổi từ đây-------------                    */
+/*                  ------------Thay đổi từ đây-------------                    */
+/*                  ------------Thay đổi từ đây-------------                    */
+
 .scroll-box {
     height: 300px;
     overflow-y: auto;
@@ -126,24 +148,6 @@ nav, .navbar, .header1 {
 .scroll-box::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
-
-.header1{
-    background-image: linear-gradient( #000000,#080075);
-    border-bottom: 2px solid;
-}
-.img1{
-    width: 50px;
-}
-.navbar{
-    font-size: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-}
-.nav-item {
-    min-width: 80px;
-    font-size: clamp(12px, 2vw, 16px); /
-}
 .zoom-img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -153,7 +157,7 @@ nav, .navbar, .header1 {
 .imgMain {
     overflow: hidden;
     position: relative;
-    width: 100%; /* hoặc width cố định nếu muốn */
+    width: 100%; 
 }
 .zoom-img:hover {
     transform: scale(1.05);
@@ -199,7 +203,7 @@ nav, .navbar, .header1 {
 }
 
 .color-option.selected {
-    border: 2px solid #fd7e14; /* viền cam khi được chọn */
+    border: 2px solid #fd7e14; 
 }
 
 .color-circle {
