@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!--Thư viện icon-->
+    <link rel="stylesheet" href="../CSS/sanpham.css">
+    <link rel="shortcut icon" href="../img/H_1.png" type="image/x-icon">
+    <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../Bootstrap/jquery-3.7.1.js"></script>
+    <script src="../js/sanpham.js"></script>
+    <title>Sản phẩm</title>
+</head>
+<body>
+    <div class="container-fluid p-0 min-vh-100" id="container">
+        <div class="header header1 w-100 px-3">
+            <nav class="navbar w-100">
+                <div class="row w-100 d-flex justify-content-center align-items-center">
+                    <div class="col-2">
+                        <a href="../HTML/home.html" class="logo text-white navbar-brand">
+                            <img class="w-100" src="../img/H-removebg-preview.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <div class="search-header">
+                            <div class="search-smart">
+                                <form class="header-search-form input-group search-bar">
+                                    <input type="text" required class="input-group-field auto-search search-auto form-control" placeholder="Bạn cần tìm gì..." autocomplete="off">
+                                    <button type="button" class="btn icon-fallback-text" aria-label="Tìm kiếm" title="Tìm kiếm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path fill="#000000" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                            <ul class="nav navbar" id="nav1">
+                                <li class="nav-item d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="content">
+                                        <a class="nav-link" href="#">Liên hệ</a>														
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                        </svg>
+                                    </div>
+                                    <div class="content">
+                                        <a class="nav-link" href="#">Hệ thống cửa hàng</a>														
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                                            <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                        </svg>
+                                    </div>
+                                    <div class="content">
+                                        <a class="nav-link" href="#">Tra cứu đơn hàng</a>														
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                        </svg>
+                                    </div>
+                                    <div class="content">
+                                        <a class="nav-link" href="#">Giỏ hàng</a>														
+                                        
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                        </svg>
+                                    </div>
+                                    <div class="content">
+                                        <a class="nav-link" href="#">Thông tin</a>														
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid" style="background-color: white;">
+            <nav class="navbar navbar-expand">
+                <ul class="navbar-nav justify-content-center w-100" id="nav2">
+                    <li class="nav-item">
+                        <a href="../HTML/home.html" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu position-absolute start-50 translate-middle-x d-flex flex-row">
+                            <li class="dropdown-column">
+                                <h5 class="dropdown-header">Phụ kiện di động</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Sạc dự phòng</a></li>
+                                    <li><a class="dropdown-item" href="#">Cáp sạc</a></li>
+                                    <li><a class="dropdown-item" href="#">Miếng dán</a></li>
+                                    <li><a class="dropdown-item" href="#">Ốp lưng</a></li>
+                                    <li><a class="dropdown-item" href="#">Túi đựng AirPod</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-column">
+                                <h5 class="dropdown-header">Thiết bị âm thanh</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Tai nghe bluetooth</a></li>
+                                    <li><a class="dropdown-item" href="#">Tai nghe dây</a></li>
+                                    <li><a class="dropdown-item" href="#">Tai nghe chụp tai</a></li>
+                                    <li><a class="dropdown-item" href="#">Loa</a></li>
+                                    <li><a class="dropdown-item" href="#">Micro</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-column">
+                                <h5 class="dropdown-header">Phụ kiện laptop</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Cap chuyển đổi</a></li>
+                                    <li><a class="dropdown-item" href="#">Chuột</a></li>
+                                    <li><a class="dropdown-item" href="#">Bàn phím</a></li>
+                                    <li><a class="dropdown-item" href="#">Túi chống sốc</a></li>
+                                    <li><a class="dropdown-item" href="#">Giá đỡ</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-column">
+                                <h5 class="dropdown-header">Thương hiệu</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                                    <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                    <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                                    <li><a class="dropdown-item" href="#">Hoco</a></li>
+                                    <li><a class="dropdown-item" href="#">Anker</a></li>
+                                    <li><a class="dropdown-item" href="#">Imou</a></li>
+                                    <li><a class="dropdown-item" href="#">JBL</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-column">
+                                <h5 class="dropdown-header">Thiết bị lưu trữ</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Ổ cứng</a></li>
+                                    <li><a class="dropdown-item" href="#">Thẻ nhớ</a></li>
+                                    <li><a class="dropdown-item" href="#">USB</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Đặt trước</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Liên hệ</a>
+                    </li>
+                </ul>                    
+            </nav>
+        </div>
+        <div class="section min-vh-75 d-flex justify-content-center align-items-center" style="padding: 20px; padding-top: 0;">
+            <div class="row d-flex justify-content-center align-items-center" style="width: 75%; margin-top: 50px;">
+                <div class="left col-6" id="anh">
+                    <div class="imgMain">
+                        <img src="../img/sacduphong1.jpg" id="anhMain" alt="" class="img-fluid thumb-img zoom-img" data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor:pointer;">
+                    </div>
+                    <div class="menuAnh d-flex justify-content-center flex-wrap rounded" style="height: auto; max-height: 160px; overflow-x: auto;">
+                        <img src="../img/sacduphong1.jpg" id="anhphu1" alt="" class="img-fluid thumb-img border ps-2" style="cursor:pointer; width: 100px; height: auto;">
+                        <img src="../img/sacduphong2.jpg" id="anhphu2" alt="" class="img-fluid thumb-img border ps-2" style="cursor:pointer; width: 100px; height: auto;">
+                        <img src="../img/sacduphong3.jpg" id="anhphu3" alt="" class="img-fluid thumb-img border ps-2" style="cursor:pointer; width: 100px; height: auto;">
+                    </div>
+                </div>
+                <div class="right col-6 align-items-center" style="padding: 20px; box-shadow: 0px 5px 13px gray;">
+                    <h2>Sạc dự phòng nnostyle PowerMag Slim 10000mAh (IM20PD)</h2>
+                    <p>Giá: 30.000 VNĐ</p>
+                    <p>Mô tả: Sạc dự phòng chất lượng cao giá thành rẻ phù hợp cho sinh viên, học sinh.</p>
+                    <div class="butt">
+                        <button class="btn btn-primary w-50" id="mua" style="background-color: rgb(255, 162, 0);height: 60px; border: 0;">Mua ngay</button>
+                        <button class="btn btn-primary w-25" id="giohang" style="background-color: rgb(255, 255, 255); height: 60px; border: 1px solid rgb(255, 162, 0);"><i class="bi bi-cart-fill" style="color:rgb(255, 162, 0) ;"></i><p style="color: rgb(255, 162, 0); font-size: 13px;">Thêm vào giỏ</p></button>
+                    </div>
+                    <div class="menu mb-3">
+                        <label class="form-label fw-bold">Màu sắc</label>
+                        <div class="row mb-2">
+                            <div class="col-6">
+                                <div class="color-option selected" data-color="Silver">
+                                    <div><span class="color-circle" style="background-color: #f1f1f1;"></span>Silver</div>
+                                    <div>600.000đ</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="color-option" data-color="Gray">
+                                    <div><span class="color-circle" style="background-color: #bfbfbf;"></span>Gray</div>
+                                    <div>600.000đ</div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <div class="color-option" data-color="Lavender">
+                                        <div><span class="color-circle" style="background-color: #a695c7;"></span>Lavender</div>
+                                        <div>600.000đ</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="color-option" data-color="Blue">
+                                        <div><span class="color-circle" style="background-color: #467489;"></span>Blue</div>
+                                        <div>600.000đ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="color-option" data-color="Pink">
+                                        <div><span class="color-circle" style="background-color: #f7d6d0;"></span>Pink</div>
+                                        <div>600.000đ</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="d-flex align-items-center text-muted fs-6">
+                        <span class="me-2 d-flex align-items-center">
+                            <i class="bi bi-star-fill text-warning me-1"></i> 5
+                        </span>
+                        <span class="border-start mx-2 ps-2 info-hover">3 Đánh giá</span>
+                        <span class="border-start mx-2 ps-2 info-hover">0 Bình luận</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-box">
+                        <h5><strong>Mời bạn đánh giá</strong></h5>
+                        <div class="rating mb-3">
+                            <i class="bi bi-star-fill" data-rate="1"></i>
+                            <i class="bi bi-star-fill" data-rate="2"></i>
+                            <i class="bi bi-star-fill" data-rate="3"></i>
+                            <i class="bi bi-star-fill" data-rate="4"></i>
+                            <i class="bi bi-star-fill" data-rate="5"></i>
+                        </div>
+                        <div class="mb-3 d-flex align-items-center gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="male" checked>
+                                <label class="form-check-label" for="male">Anh</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="female">
+                                <label class="form-check-label" for="female">Chị</label>
+                            </div>
+                            <input type="text" class="form-control ms-auto" placeholder="Nhập họ tên" style="max-width: 300px;">
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nhập số điện thoại">
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Nhập email">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Nhập đánh giá của bạn"></textarea>
+                        </div>
+                        <button class="btn btn-orange px-4 py-2 text-white">Gửi đánh giá</button>
+                    </div>
+                </div>
+                <div class="col-6" style="height: 450px; overflow-y: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th colspan="2" class="text-center">Đánh giá sản phẩm</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nguyễn Văn A</td>
+                                <td>5 <i class="bi bi-star-fill text-warning me-1"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Nguyễn Văn B</td>
+                                <td>4 <i class="bi bi-star-fill text-warning me-1"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Nguyễn Văn C</td>
+                                <td>3 <i class="bi bi-star-fill text-warning me-1"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="../img/sacduphong1.jpg" alt="Ảnh lớn" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="d-flex justify-content-center gap-2">
+                        <img src="../img/sacduphong1.jpg" class="img-thumbnail thumb-img" width="80" style="cursor:pointer;">
+                        <img src="../img/sacduphong2.jpg" class="img-thumbnail thumb-img" width="80" style="cursor:pointer;">
+                        <img src="../img/sacduphong3.jpg" class="img-thumbnail thumb-img" width="80" style="cursor:pointer;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer container-fluid" id="foot">
+            <div class="row justify-content-center">
+                <div class="col-2">
+                    <h4>Chính sách</h4>
+                    <p>Chính sách thành viên</p>
+                    <p>Chính sách thanh toán</p>
+                    <p>Chính sách bảo hành và bảo trì</p>
+                    <p>Bảo mật thông tin cá nhân</p>
+                </div>
+                <div class="col-2">
+                    <h4>Hỗ trợ</h4>
+                    <p>Hướng dẫn mua hàng</p>
+                    <p>Hướng dẫn thanh toán</p>
+                    <p>Hướng dẫn giao nhận</p>
+                    <p>Điều khoản dịch vụ</p>
+                    <p>Câu hỏi thường gặp</p>
+                </div>
+                <div class="col-2">
+                    <h4>Hỗ trợ</h4>
+                    <p>Sản phẩm yêu thích</p>
+                    <p>So sánh sản phẩm</p>
+                    <p>Hệ thống cửa hàng</p>
+                    <p>Tra cứu bảo hành</p>
+                    <p>Đăng nhập tài khoản</p>
+                </div>
+                <div class="col-2">
+                    <h4>Danh mục nổi bật</h4>
+                    <p>Hãng Apple</p>
+                    <p>Hãng Xiaomi</p>
+                    <p>Tai nghe bluetooth</p>
+                    <p>Ốp lưng Iphone</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <h4>Mạng xã hội</h4>
+                    <a href="https://www.facebook.com/huybotuoi" target="_blank" class="me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/feed/you" target="_blank" class="me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FF0000" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                    </a>
+                    <a href="" target="_blank" class="me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="000000" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="col-3">
+                    <p style="font-weight: 700;">MUA ONLINE (08:00 - 21:00 mỗi ngày)</p>
+                    <p style="font-weight: 700;">GÓP Ý & KHIẾU NẠI (08:30 - 20:30)</p>
+                    <p>19006750</p>
+                    <p>Tất cả các ngày trong tuần (Trừ tết Âm Lịch)</p>
+                </div>
+                <div class="col-3">
+                    <h4>DoubleH Shop</h4>
+                    <p>Hệ thống bán lẻ phụ kiện điện thoại, máy tính, thiết bị công nghệ chính hãng.</p>
+                    <p><span style="color: blue; font-weight: 600;">Địa chỉ: </span>13 Nguyễn Văn Bảo, phường 4, quận Gò Vấp</p>
+                    <p><span style="color: blue; font-weight: 600;">Điện thoại: </span>0339978579</p>
+                    <p><span style="color: blue; font-weight: 600;">Email: </span>nguyenvantuan17102001@gmail.com</p>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="height: 40px; background-color: rgb(144, 144, 144); color: rgb(0, 0, 0);">
+                Bản quyền thuộc về Nguyễn Nhất Huy & Nguyễn Tấn Hùng
+            </div>
+        </div>
+    </div>
+</body>
+</html>
