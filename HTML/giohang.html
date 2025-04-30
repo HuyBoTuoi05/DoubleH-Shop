@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!--Thư viện icon-->
-    <link rel="stylesheet" href="../CSS/chinhsachthanhvien.css">
+    <link rel="stylesheet" href="../CSS/giohang.css">
     <link rel="shortcut icon" href="../img/H_1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../Bootstrap/jquery-3.7.1.js"></script>
-    <title>Chính sách thành viên</title>
+    <script src="../js/giohang.js"></script>
+    <title>Danh sách sản phẩm</title>
 </head>
 <body>
     <div class="container-fluid p-0 min-vh-100">
@@ -22,14 +23,14 @@
                         <img class="img-fluid" src="../img/H-removebg-preview.png" alt="DoubleH Shop" style="max-height: 40px;">
                     </a>
         
-                    <!-- Mobile Toggle Button -->
+                    <!-- nút  -->
                     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
         
                     <!-- Main Navbar Content -->
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <!-- Search Bar - Visible on desktop -->
+                        <!-- Search Bar -->
                         <div class="d-none d-lg-block ms-3 me-auto">
                             <form class="d-flex">
                                 <div class="input-group">
@@ -149,95 +150,50 @@
         </div>
         
         <!-- section -->
-        
-        <div class="section min-vh-75">
-            <div class="container mt-5 bg-light box">
-                <header class="membership-header text-center">
-                    <div class="container">
-                        <h1 class="membership-title">Chính sách thành viên</h1>
-                        <p class="lead">Tận hưởng nhiều ưu đãi đặc biệt khi trở thành thành viên của DoubleH Shop</p>
-                    </div>
-                </header>
-            
-                <!-- Main Content -->
-                <main class="container mb-5">
-                    <section class="policy-section">
-                        <h2 class="section-title">Điều kiện chính sách thành viên</h2>
-                        
-                        <div class="card mb-4 border-0 shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">1. Thẻ thành viên</h3>
-                                <p>Điều kiện cấp thẻ thành viên: Khi khách hàng mua hàng trên hệ thống DoubleH Shop sẽ được cấp thẻ thành viên.</p>
-                                
-                                <h4 class="mt-4">Quyền lợi thành viên:</h4>
-                                <ul class="benefit-list">
-                                    <li>Giảm giá 5% cho tất cả các đơn hàng</li>
-                                    <li>Tích điểm 1% giá trị đơn hàng</li>
-                                    <li>Nhận thông báo ưu đãi sớm nhất</li>
-                                    <li>Đổi điểm lấy quà tặng</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">2. Thẻ VIP</h3>
-                                <p>Điều kiện nhận thẻ VIP:</p>
-                                <ul class="benefit-list">
-                                    <li>Có giá trị tổng đơn hàng lớn hơn 15 triệu/tháng</li>
-                                    <li>Mua hàng với giá trị 3 triệu trở lên</li>
-                                    <li>Tham gia các hoạt động, chương trình khuyến mãi của DoubleH Shop</li>
-                                </ul>
-                                
-                                <div class="note-box mt-4">
-                                    <strong>Lưu ý:</strong> Hạn mức 10, 20, 30, 50, 100 triệu đồng là tính từ thời điểm bắt đầu mua tới khi lên thẻ. Khi lên thẻ VIP và tích tiếp lên 20 đến 100 triệu, tổng tiền này là tính từ khi khách hàng mua lần đầu và cộng dồn lên.
-                                </div>
-                                
-                                <h4 class="mt-4">Quyền lợi VIP:</h4>
-                                <ul class="benefit-list">
-                                    <li>Giảm giá 10-15% tùy hạng thẻ</li>
-                                    <li>Tích điểm 2-3% giá trị đơn hàng</li>
-                                    <li>Miễn phí vận chuyển toàn quốc</li>
-                                    <li>Ưu tiên bảo hành, đổi trả</li>
-                                    <li>Nhận quà sinh nhật đặc biệt</li>
-                                    <li>Tham gia sự kiện riêng</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="policy-section">
-                        <h2 class="section-title">Hướng dẫn sử dụng thẻ</h2>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 border-0 shadow-sm">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Cách tích điểm</h3>
-                                        <ul>
-                                            <li>Mỗi 10,000đ = 1 điểm</li>
-                                            <li>Điểm được cộng sau khi đơn hàng hoàn tất</li>
-                                            <li>Điểm có giá trị trong 12 tháng</li>
-                                        </ul>
+        <!-- section -->
+        <div class="section align-items-center py-4">
+            <div class="container my-5">
+                <h2 class="text-center mb-4">Giỏ hàng của bạn</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Sản phẩm</th>
+                                <th scope="col">Tên sản phẩm</th>
+                                <th scope="col">Giá</th>
+                                <th scope="col">Số lượng</th>
+                                <th scope="col">Tổng</th>
+                                <th scope="col">Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Các sản phẩm trong giỏ hàng sẽ được thêm vào đây -->
+                            <tr>
+                                <td data-label="Sản phẩm">Ảnh sản phẩm</td>
+                                <td data-label="Tên sản phẩm">Tên sản phẩm</td>
+                                <td data-label="Giá">100.000đ</td>
+                                <td data-label="Số lượng">
+                                    <div class="quantity-control">
+                                        <button>-</button>
+                                        <input type="number" value="1" min="1">
+                                        <button>+</button>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 border-0 shadow-sm">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Cách đổi quà</h3>
-                                        <ul>
-                                            <li>Truy cập trang "Đổi điểm" trên website</li>
-                                            <li>Chọn quà tặng phù hợp với số điểm</li>
-                                            <li>Nhận quà tại cửa hàng hoặc qua bưu điện</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </main>
+                                </td>
+                                <td data-label="Tổng">100.000đ</td>
+                                <td data-label="Hành động">
+                                    <button class="btn btn-danger">Xóa</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <h4 class="fw-bold">Tổng cộng: <span id="total-price">100.000đ</span></h4>
+                    <button class="btn btn-primary btn-lg">Thanh toán</button>
+                </div>
             </div>
         </div>
+        <!-- ... -->
 
         <!-- Footer -->
         <div class="footer container-fluid text-white pt-5 pb-3" id="foot">
@@ -260,7 +216,7 @@
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn mua hàng</a></li>
                             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn thanh toán</a></li>
-                            <li class="mb-2"><a href="../HTML/cauhoithuonggap.html" class="text-white-50 text-decoration-none hover-text-primary">Câu hỏi thường gặp</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Câu hỏi thường gặp</a></li>
                             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Tra cứu bảo hành</a></li>
                         </ul>
                     </div>

@@ -138,69 +138,85 @@ nav, .navbar, .header1 {
 /*                  ------------Thay đổi từ đây-------------                    */
 /*                  ------------Thay đổi từ đây-------------                    */
 /*                  ------------Thay đổi từ đây-------------                    */
-
-
-.section {
+.contact-section {
     background-color: #f8f9fa;
 }
 
-h2 {
-    color: #343a40;
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 15px;
+.contact-info-card, .contact-form-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
 }
 
-h2:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: #0d6efd;
+.contact-info-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    border-left: 4px solid #0d6efd;
 }
 
-.table {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+.contact-info-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
 }
 
-.table thead th {
-    background-color: #212529;
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: #0d6efd;
     color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    border-bottom: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 3px;
 }
 
-.table tbody tr {
-    transition: all 0.3s ease;
+.contact-info-item h5 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
 }
 
-.table tbody tr:hover {
-    background-color: rgba(13, 110, 253, 0.05);
+.contact-info-item p {
+    color: #555;
+    margin-bottom: 0;
 }
 
-.table tbody td {
-    vertical-align: middle;
-    padding: 1.2rem 0.75rem;
+.contact-info-item a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.table tbody td:first-child {
-    width: 100px;
+.contact-info-item a:hover {
+    color: #0d6efd;
+}
+
+.contact-form-card {
+    border-top: 4px solid #0d6efd;
+}
+
+.form-floating label {
+    color: #6c757d;
+}
+
+.form-control, .form-control:focus {
+    border-color: #dee2e6;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
 }
 
 .btn-primary {
     background-color: #0d6efd;
     border: none;
-    padding: 0.75rem 2rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    padding: 12px;
+    font-weight: 500;
+    transition: all 0.3s;
 }
 
 .btn-primary:hover {
@@ -209,75 +225,12 @@ h2:after {
     box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
 }
 
-#total-price {
-    color: #0d6efd;
-    font-size: 1.5rem;
-}
-
-.quantity-control {
-    display: flex;
-    align-items: center;
-}
-
-.quantity-control button {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #dee2e6;
-    background-color: #f8f9fa;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.quantity-control input {
-    width: 50px;
-    text-align: center;
-    border: 1px solid #dee2e6;
-    margin: 0 5px;
-    padding: 5px;
-}
-
-.btn-danger {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-}
-
 @media (max-width: 768px) {
-    .table-responsive {
-        border: none;
+    .contact-info-card, .contact-form-card {
+        padding: 20px;
     }
     
-    .table thead {
-        display: none;
-    }
-    
-    .table tbody tr {
-        display: block;
-        margin-bottom: 1rem;
-        border: 1px solid #dee2e6;
-        border-radius: 5px;
-    }
-    
-    .table tbody td {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: right;
-        padding: 0.5rem 1rem;
-        border: none;
-        border-bottom: 1px solid #dee2e6;
-    }
-    
-    .table tbody td:before {
-        content: attr(data-label);
-        font-weight: bold;
-        margin-right: auto;
-        padding-right: 1rem;
-        text-align: left;
-    }
-    
-    .table tbody td:last-child {
-        border-bottom: none;
+    .btn-primary:hover {
+        transform: none;
     }
 }
