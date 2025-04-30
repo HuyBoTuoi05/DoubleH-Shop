@@ -37,29 +37,6 @@ function updateStars(rate) {
     });
 }
 
-/*
-const listAnh = [
-    "../img/sacduphong1.jpg",
-    "../img/sacduphong2.jpg",
-    "../img/sacduphong3.jpg"
-];
-let currentIndex = 0;
-let slideshowInterval;
-function anhChay(imageId, intervalTime = 3000) {
-    const anhChinh = document.getElementById(anhChinh);
-
-    if (!anhChinh) return;
-
-    chay = setInterval(() => {
-        currentIndex = (currentIndex + 1) % listAnh.length;
-        anhChinh.src = listAnh[currentIndex];
-    }, intervalTime);
-}
-
-function stopSlideshow() {
-    clearInterval(chay);
-}
-*/
 function doiAnh() {
     const thumbnails = document.querySelectorAll("#anh .thumb-img");
     const mainImage = document.querySelector(".imgMain img");

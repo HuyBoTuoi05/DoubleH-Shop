@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!--Thư viện icon-->
-    <link rel="stylesheet" href="../CSS/chinhsachthanhvien.css">
+    <link rel="stylesheet" href="../CSS/dangky.css">
     <link rel="shortcut icon" href="../img/H_1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../Bootstrap/jquery-3.7.1.js"></script>
-    <title>Chính sách thành viên</title>
+    <script src="../js/dangky.js"></script>
+    <title>Đăng ký tài khoản</title>
 </head>
 <body>
     <div class="container-fluid p-0 min-vh-100">
@@ -156,7 +157,7 @@
                         <a class="nav-link nav-link-custom1 text-white" href="#">Tin tức</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom1 text-white" href="../HTML/cauhoithuonggap.html">Câu hỏi thường gặp</a>
+                        <a class="nav-link nav-link-custom1 text-white" href="#">Câu hỏi thường gặp</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-custom1 text-white" href="#">Đặt trước</a>
@@ -185,95 +186,168 @@
         </div>
         
         <!-- section -->
-        
-        <div class="section min-vh-75">
-            <div class="container mt-5 bg-light box">
-                <header class="membership-header text-center">
-                    <div class="container">
-                        <h1 class="membership-title">Chính sách thành viên</h1>
-                        <p class="lead">Tận hưởng nhiều ưu đãi đặc biệt khi trở thành thành viên của DoubleH Shop</p>
+        <div class="container-fluid">
+            <div class="row p-5">
+              <!-- Left: Form -->
+              <div class="col-lg-6 registration-container" id="registration-container">
+                <!-- Form đăng ký tài khoản -->
+                <div class="form-wrapper">
+                    <div class="form-header">
+                        <h2>Tạo tài khoản</h2>
+                        <p>Tham gia cộng đồng của chúng tôi để nhận nhiều ưu đãi hấp dẫn</p>
                     </div>
-                </header>
-            
-                <!-- Main Content -->
-                <main class="container mb-5">
-                    <section class="policy-section">
-                        <h2 class="section-title">Điều kiện chính sách thành viên</h2>
-                        
-                        <div class="card mb-4 border-0 shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">1. Thẻ thành viên</h3>
-                                <p>Điều kiện cấp thẻ thành viên: Khi khách hàng mua hàng trên hệ thống DoubleH Shop sẽ được cấp thẻ thành viên.</p>
-                                
-                                <h4 class="mt-4">Quyền lợi thành viên:</h4>
-                                <ul class="benefit-list">
-                                    <li>Giảm giá 5% cho tất cả các đơn hàng</li>
-                                    <li>Tích điểm 1% giá trị đơn hàng</li>
-                                    <li>Nhận thông báo ưu đãi sớm nhất</li>
-                                    <li>Đổi điểm lấy quà tặng</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="card border-0 shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">2. Thẻ VIP</h3>
-                                <p>Điều kiện nhận thẻ VIP:</p>
-                                <ul class="benefit-list">
-                                    <li>Có giá trị tổng đơn hàng lớn hơn 15 triệu/tháng</li>
-                                    <li>Mua hàng với giá trị 3 triệu trở lên</li>
-                                    <li>Tham gia các hoạt động, chương trình khuyến mãi của DoubleH Shop</li>
-                                </ul>
-                                
-                                <div class="note-box mt-4">
-                                    <strong>Lưu ý:</strong> Hạn mức 10, 20, 30, 50, 100 triệu đồng là tính từ thời điểm bắt đầu mua tới khi lên thẻ. Khi lên thẻ VIP và tích tiếp lên 20 đến 100 triệu, tổng tiền này là tính từ khi khách hàng mua lần đầu và cộng dồn lên.
-                                </div>
-                                
-                                <h4 class="mt-4">Quyền lợi VIP:</h4>
-                                <ul class="benefit-list">
-                                    <li>Giảm giá 10-15% tùy hạng thẻ</li>
-                                    <li>Tích điểm 2-3% giá trị đơn hàng</li>
-                                    <li>Miễn phí vận chuyển toàn quốc</li>
-                                    <li>Ưu tiên bảo hành, đổi trả</li>
-                                    <li>Nhận quà sinh nhật đặc biệt</li>
-                                    <li>Tham gia sự kiện riêng</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <section class="policy-section">
-                        <h2 class="section-title">Hướng dẫn sử dụng thẻ</h2>
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 border-0 shadow-sm">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Cách tích điểm</h3>
-                                        <ul>
-                                            <li>Mỗi 10,000đ = 1 điểm</li>
-                                            <li>Điểm được cộng sau khi đơn hàng hoàn tất</li>
-                                            <li>Điểm có giá trị trong 12 tháng</li>
-                                        </ul>
-                                    </div>
+          
+                    <form id="registrationForm" onsubmit="saveFormData(); return checkValid();">
+                        <div class="row g-3 mb-3">  
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="ho" id="ho" placeholder="Họ" onblur="checkHo()">
+                                    <label for="ho">Họ</label>
+                                    <span class="text-danger" id="hoErr"></span>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 border-0 shadow-sm">
-                                    <div class="card-body">
-                                        <h3 class="card-title">Cách đổi quà</h3>
-                                        <ul>
-                                            <li>Truy cập trang "Đổi điểm" trên website</li>
-                                            <li>Chọn quà tặng phù hợp với số điểm</li>
-                                            <li>Nhận quà tại cửa hàng hoặc qua bưu điện</li>
-                                        </ul>
-                                    </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="ten" name="ten" placeholder="Tên" onblur="checkTen()">
+                                    <label for="lastName">Tên</label>
+                                    <span class="text-danger" id="tenErr"></span>
                                 </div>
+                            </div>              
+                        </div>
+          
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" onblur="checkEmail()">
+                                <label for="email">Email</label>
+                                <span class="text-danger" id="emailErr"></span>
                             </div>
                         </div>
-                    </section>
-                </main>
+
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="sdt" name="sdt" placeholder="Số điện thoại" onblur="checkSDT()">
+                                <label for="sdt">Số điện thoại</label>
+                                <span class="text-danger" id="sdtErr"></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="diachi" name="diachi" placeholder="Địa chỉ" onblur="checkDiachi()">
+                                <label for="diachi">Địa chỉ</label>
+                                <span class="text-danger" id="diachiErr"></span>
+                            </div>
+                        </div>
+          
+          
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="mk" name="mk" placeholder="Mật khẩu" onblur="checkMK()">
+                                <label for="password">Mật khẩu</label>
+                                <span class="text-danger" id="mkErr"></span>
+                            </div>
+                        </div>
+          
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="xnmk" placeholder="Xác nhận mật khẩu" onblur="checkXNMK()">
+                                <label for="confirmPassword">Xác nhận mật khẩu</label>
+                                <span class="text-danger" id="xnmkErr"></span>
+                            </div>
+                        </div>  
+          
+                        <div class="d-grid mb-3">
+                            <button type="submit" class="btn btn-register btn-lg">
+                                <i class="fas fa-user-plus me-2"></i> Đăng ký
+                            </button>
+                        </div>
+          
+                        <div class="divider">
+                            <span class="divider-text">Tiếp tục với</span>
+                        </div>
+          
+                        <div class="social-login">
+                            <a href="#" class="social-btn google">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-btn facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        <a href="#" class="social-btn linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+          
+                        <div class="login-link">
+                            Bạn đã có tài khoản? <a onclick="showLoginForm()">Đăng nhập</a>
+                        </div>
+                    </form>
+                </div>
+              </div>
+                <!-- Form đăng nhập -->
+                <div class="col-lg-6 login-container" id="login-container">
+                    <div class="form-wrapper">
+                        <div class="form-header">
+                            <h2>Đăng nhập</h2>
+                        </div>
+                        <form id="loginForm" class="form" onsubmit="return checkValidDN()" action="../HTML/thongtindangnhap.html">                            
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="dn" placeholder="name@example.com" onblur="checkDn()">
+                                    <label for="dn">Email hoặc số điện thoại</label>
+                                    <span class="text-danger" id="dnErr"></span>
+                                </div>
+                            </div>
+              
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="mkdn" placeholder="Mật khẩu" autocomplete="none">
+                                    <label for="mkdn">Mật khẩu</label>
+                                    <span class="text-danger" id="mkdnErr"></span>
+                                </div>
+                            </div>
+              
+                            <div class="d-grid mb-3">
+                                <button type="submit" class="btn btn-register btn-lg">
+                                    <i class="fas fa-user-plus me-2"></i>Đăng nhập
+                                </button>
+                            </div>
+              
+                            <div class="divider">
+                                <span class="divider-text">Tiếp tục với</span>
+                            </div>
+              
+                            <div class="social-login">
+                                <a href="#" class="social-btn google">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#" class="social-btn facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-btn linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+              
+                            <div class="login-link">
+                              Bạn chưa có tài khoản? <a onclick="showRegisterForm()">Đăng ký</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+          
+              <!-- Right: Image -->
+              <div class="col-lg-6 image-side d-none d-lg-block">
+                <div class="image-overlay">
+                  <div class="image-content">
+                    <h2>Welcome to Our Platform</h2>
+                    <p>Join thousands of professionals who are already benefiting from our services. Create your account today and unlock exclusive features designed to help you succeed.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+
+        <!-- ... -->
 
         <!-- Footer -->
         <div class="footer container-fluid text-white pt-5 pb-3" id="foot">
@@ -296,7 +370,7 @@
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn mua hàng</a></li>
                             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn thanh toán</a></li>
-                            <li class="mb-2"><a href="../HTML/cauhoithuonggap.html" class="text-white-50 text-decoration-none hover-text-primary">Câu hỏi thường gặp</a></li>
+                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Câu hỏi thường gặp</a></li>
                             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Tra cứu bảo hành</a></li>
                         </ul>
                     </div>

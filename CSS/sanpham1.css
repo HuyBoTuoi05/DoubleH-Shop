@@ -9,6 +9,17 @@
     padding: 10px;
     width: 600px;
 }
+.dropdown-mega1 {
+    right: 0;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px;
+    background-color: #cacaca;
+}
 
 .dropdown-item{
     padding: 0;

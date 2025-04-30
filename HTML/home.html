@@ -23,14 +23,14 @@
                         <img class="img-fluid" src="../img/H-removebg-preview.png" alt="DoubleH Shop" style="max-height: 40px;">
                     </a>
         
-                    <!-- Mobile Toggle Button -->
+                    <!-- Nút navbar thu nhỏ -->
                     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
         
-                    <!-- Main Navbar Content -->
+                    <!-- Navbar -->
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <!-- Search Bar - Visible on desktop -->
+                        <!-- Thanh tìm kiếm -->
                         <div class="d-none d-lg-block ms-3 me-auto">
                             <form class="d-flex">
                                 <div class="input-group">
@@ -43,8 +43,6 @@
                                 </div>
                             </form>
                         </div>
-        
-                        <!-- Top Navigation Links -->
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link nav-link-custom d-flex align-items-center" href="#">
@@ -79,14 +77,22 @@
                                     Giỏ hàng
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-custom d-flex align-items-center" href="#">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav-link-custom d-flex align-items-center dropdown-toggle" href="../HTML/thongtindangnhap.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle me-1" viewBox="0 0 16 16">
                                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                                     </svg>
                                     Tài khoản
                                 </a>
+                                <ul class="dropdown-menu dropdown-menu-secondary dropdown-mega1">
+                                    <div class="row mx-0">
+                                        <div class="col">
+                                            <a class="dropdown-item" href="../HTML/dangky.html">Đăng nhập/Đăng ký</a>
+                                            <a class="dropdown-item" href="../HTML/thongtindangnhap.html">Thông tin khách hàng</a>
+                                        </div>
+                                    </div>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -94,7 +100,7 @@
             </nav>
         </div>
         
-        <!-- Secondary Navigation -->
+        <!-- Nav phụ -->
         <div class="container-fluid bg-primary py-2 d-none d-lg-block">
             <div class="container">
                 <ul class="nav justify-content-center">
@@ -105,7 +111,7 @@
                         <a class="nav-link nav-link-custom1 text-white" href="../HTML/gioithieu.html">Giới thiệu</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link nav-link-custom1 dropdown-toggle text-white" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link nav-link-custom1 dropdown-toggle text-white" href="../HTML/tatcasanpham.html" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Sản phẩm
                         </a>
                         <ul class="dropdown-menu dropdown-menu-light dropdown-mega">
@@ -161,7 +167,7 @@
             </div>
         </div>
         
-        <!-- Mobile Search - Hidden on desktop -->
+        <!-- Mobile Search -->
         <div class="container-fluid bg-dark py-2 d-lg-none">
             <div class="container">
                 <form class="d-flex">
@@ -270,7 +276,7 @@
                     <div class="d-flex align-items-center">
                         <div class="block me-3"></div>
                         <a href="#" class="text-decoration-none">
-                            <h2 class="blink-text m-0">Sản phẩm nổi bật</h2>
+                            <h2 class="blink-text m-0">Danh mục nổi bật</h2>
                         </a>
                     </div>
                 </div>
@@ -283,8 +289,7 @@
                                         <a href="#"><img src="../img/headphone.png" class="img w-100" alt=""></a>
                                     </div>
                                     <div class="card-header">
-                                        <h3>Tai nghe 1</h3>
-                                        <p>540.000đ</p>
+                                        <h3>Tai nghe</h3>
                                     </div>
                                 </div>
                             </div>
@@ -294,8 +299,7 @@
                                         <a href="#"><img src="../img/headphone2.jpg" class="img w-100" alt=""></a>
                                     </div>
                                     <div class="card-header">
-                                        <h3>Tai nghe 2</h3>
-                                        <p>380.000đ</p>
+                                        <h3>Ốp lưng</h3>
                                     </div>
                                 </div>
                             </div>
@@ -306,7 +310,6 @@
                                     </div>
                                     <div class="card-header">
                                         <h3>Sạc dự phòng</h3>
-                                        <p>520.000đ</p>
                                     </div>
                                 </div>
                             </div>
@@ -316,8 +319,7 @@
                                         <a href="#"><img src="../img/headphone4.jpg" class="img w-100" alt=""></a>
                                     </div>
                                     <div class="card-header">
-                                        <h3>Tai nghe 3</h3>
-                                        <p>460.000đ</p>
+                                        <h3>Chuột</h3>
                                     </div>
                                 </div>
                             </div>
@@ -329,13 +331,13 @@
             <div class="container mt-5 bg-light box_noibat" id="box_spNoibat">
                 <div class="d-flex flex-row">
                     <a href="#">
-                        <div class="boxContent mt-2">
+                        <div class="boxContent mt-2 rounded-pill">
                             <img src="../img/new.png" class="img">
                             <span>Sản phẩm mới</span>
                         </div>
                     </a>
                     <a href="#">
-                        <div class="boxContent mt-2">
+                        <div class="boxContent mt-2 rounded-pill">
                             <img src="../img/bestSale.png" class="img">
                             <span>Sản phẩm bán chạy</span>
                         </div>
@@ -343,172 +345,219 @@
                 </div>
                 <div class="row justify-content-center mt-3" id="row2">
                     <div class="col-12">
-                        <div class="row text-center g-3">
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a href="#"><img src="../img/headphone.png" class="img w-100" alt=""></a>
+                        <div class="row text-center row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 pb-3">
+                            <!-- Product 1 -->
+                            <div class="col">
+                                <div class="card h-100 product-card shadow-sm hover-shadow rounded-5">
+                                    <div class="card-body p-0 position-relative rounded-top">
+                                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 small rounded-start mt-2">-45%</span>
+                                        <a href="#" class="product-img-link">
+                                            <img src="../img/capsac1.jpg" class="img-fluid w-100 rounded-top" alt="Sạc nhanh Apple">
+                                        </a>
                                     </div>
-                                    <div class="card-header">
-                                        <h3>Tai nghe 1</h3>
-                                        <p>540.000đ</p>
-                                        <div class="like-btn d-flex justify-content-between align-items-center px-3 py-2">
-                                            <button class="like-button d-flex align-items-center gap-2 border-0 bg-transparent text-dark p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart heart-icon" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                                </svg>
-                                                <span class="like">Thích</span>
+                                    <div class="card-header bg-white border-top-0 rounded-bottom">
+                                        <h6 class="card-title text-truncate">Sạc nhanh 20W Apple MHJE3ZA | Chính hãng Apple Việt Nam</h6>
+                                        <p class="mb-1">
+                                            <span class="text-danger fw-bold">490.000₫</span> 
+                                            <span class="text-muted text-decoration-line-through small">890.000₫</span>
+                                        </p>
+                                        <p class="small text-muted mb-2">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="like-button btn btn-sm btn-outline-secondary rounded-pill">
+                                                <i class="bi bi-heart me-1"></i> Thích
                                             </button>
-                                            <span>Đã bán: 123</span>
+                                            <span class="small text-muted">Đã bán: 123</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a href="#"><img src="../img/headphone2.jpg" class="img w-100" alt=""></a>
+                            <!-- Product 2 -->
+                            <div class="col">
+                                <div class="card h-100 product-card shadow-sm hover-shadow rounded-5">
+                                    <div class="card-body p-0 position-relative rounded-top">
+                                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 small rounded-start mt-2">-20%</span>
+                                        <a href="#" class="product-img-link">
+                                            <img src="../img/capsac2.jpg" class="img-fluid w-100 rounded-top" alt="Cáp Momax">
+                                        </a>
                                     </div>
-                                    <div class="card-header">
-                                        <h3>Tai nghe 2</h3>
-                                        <p>380.000đ</p>
-                                        <div class="like-btn d-flex justify-content-between align-items-center px-3 py-2">
-                                            <button class="like-button d-flex align-items-center gap-2 border-0 bg-transparent text-dark p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart heart-icon" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                                </svg>
-                                                <span class="like">Thích</span>
+                                    <div class="card-header bg-white border-top-0 rounded-bottom">
+                                        <h6 class="card-title text-truncate">Cáp Momax USB-C to USB-C MAG Link 100W USB 2.0 có nam châm dài 2M DC36</h6>
+                                        <p class="mb-1">
+                                            <span class="text-danger fw-bold">450.000₫</span> 
+                                            <span class="text-muted text-decoration-line-through small">560.000₫</span>
+                                        </p>
+                                        <p class="small text-muted mb-2">Hỗ trợ sạc nhanh và truyền dữ liệu tốc độ cao...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="like-button btn btn-sm btn-outline-secondary rounded-pill">
+                                                <i class="bi bi-heart me-1"></i> Thích
                                             </button>
-                                            <span>Đã bán: 123</span>
+                                            <span class="small text-muted">Đã bán: 89</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a href="sanpham1.html"><img src="../img/sacduphong1.jpg" class="img w-100" alt=""></a>
+                            
+                            <!-- Product 3 -->
+                            <div class="col">
+                                <div class="card h-100 product-card shadow-sm hover-shadow rounded-5">
+                                    <div class="card-body p-0 position-relative rounded-top">
+                                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 small rounded-start mt-2">-40%</span>
+                                        <a href="sanpham.html" class="product-img-link">
+                                            <img src="../img/capsac3.webp" class="img-fluid w-100 rounded-top" alt="Sạc ô tô Aukey">
+                                        </a>
                                     </div>
-                                    <div class="card-header">
-                                        <h3>Sạc dự phòng</h3>
-                                        <p>520.000đ</p>
-                                        <div class="like-btn d-flex justify-content-between align-items-center px-3 py-2">
-                                            <button class="like-button d-flex align-items-center gap-2 border-0 bg-transparent text-dark p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart heart-icon" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                                </svg>
-                                                <span class="like">Thích</span>
+                                    <div class="card-header bg-white border-top-0 rounded-bottom">
+                                        <h6 class="card-title text-truncate">Sạc ô tô Aukey 2C 65W CC-Y23</h6>
+                                        <p class="mb-1">
+                                            <span class="text-danger fw-bold">150.000₫</span> 
+                                            <span class="text-muted text-decoration-line-through small">250.000₫</span>
+                                        </p>
+                                        <p class="small text-muted mb-2">Hỗ trợ sạc nhanh Power Delivery...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="like-button btn btn-sm btn-outline-secondary rounded-pill">
+                                                <i class="bi bi-heart me-1"></i> Thích
                                             </button>
-                                            <span>Đã bán: 123</span>
+                                            <span class="small text-muted">Đã bán: 156</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a href="#"><img src="../img/headphone4.jpg" class="img w-100" alt=""></a>
+                            
+                            <!-- Product 4 -->
+                            <div class="col">
+                                <div class="card h-100 product-card shadow-sm hover-shadow rounded-5">
+                                    <div class="card-body p-0 position-relative rounded-top">
+                                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 small rounded-start mt-2">-70%</span>
+                                        <a href="#" class="product-img-link">
+                                            <img src="../img/capsac4.webp" class="img-fluid w-100 rounded-top" alt="Cáp Baseus">
+                                        </a>
                                     </div>
-                                    <div class="card-header">
-                                        <h3>Tai nghe 3</h3>
-                                        <p>460.000đ</p>
-                                        <div class="like-btn d-flex justify-content-between align-items-center px-3 py-2">
-                                            <button class="like-button d-flex align-items-center gap-2 border-0 bg-transparent text-dark p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart heart-icon" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                                </svg>
-                                                <span class="like">Thích</span>
+                                    <div class="card-header bg-white border-top-0 rounded-bottom">
+                                        <h6 class="card-title text-truncate">Cáp Baseus Crystal Shine USB-C to Lightning 1.2M</h6>
+                                        <p class="mb-1">
+                                            <span class="text-danger fw-bold">109.000₫</span> 
+                                            <span class="text-muted text-decoration-line-through small">350.000₫</span>
+                                        </p>
+                                        <p class="small text-muted mb-2">Hỗ trợ sạc nhanh và truyền dữ liệu...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="like-button btn btn-sm btn-outline-secondary rounded-pill">
+                                                <i class="bi bi-heart me-1"></i> Thích
                                             </button>
-                                            <span>Đã bán: 123</span>
+                                            <span class="small text-muted">Đã bán: 212</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row text-center g-3 mt-2">
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a href="#"><img src="../img/headphone.png" class="img w-100" alt=""></a>
+                        
+                        <div class="row text-center row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 pb-3">
+                            <!-- Product 5 -->
+                            <div class="col">
+                                <div class="card h-100 product-card shadow-sm hover-shadow rounded-5"> 
+                                    <div class="card-body p-0 position-relative rounded-top"> 
+                                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 small rounded-start mt-2">-45%</span>
+                                        <a href="#" class="product-img-link">
+                                            <img src="../img/capsac1.jpg" class="img-fluid w-100 rounded-top" alt="Sạc nhanh Apple">
+                                        </a>
                                     </div>
-                                    <div class="card-header">
-                                        <h3>Tai nghe 1</h3>
-                                        <p>540.000đ</p>
-                                        <div class="like-btn d-flex justify-content-between align-items-center px-3 py-2">
-                                            <button class="like-button d-flex align-items-center gap-2 border-0 bg-transparent text-dark p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart heart-icon" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                                </svg>
-                                                <span class="like">Thích</span>
+                                    <div class="card-header bg-white border-top-0 rounded-bottom"> 
+                                        <h6 class="card-title text-truncate">Sạc nhanh 20W Apple MHJE3ZA | Chính hãng Apple Việt Nam</h6>
+                                        <p class="mb-1">
+                                            <span class="text-danger fw-bold">490.000₫</span> 
+                                            <span class="text-muted text-decoration-line-through small">890.000₫</span>
+                                        </p>
+                                        <p class="small text-muted mb-2">Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="like-button btn btn-sm btn-outline-secondary rounded-pill">
+                                                <i class="bi bi-heart me-1"></i> Thích
                                             </button>
-                                            <span>Đã bán: 123</span>
+                                            <span class="small text-muted">Đã bán: 123</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a href="#"><img src="../img/headphone2.jpg" class="img w-100" alt=""></a>
+                            <!-- Product 6 -->
+                            <div class="col">
+                                <div class="card h-100 product-card shadow-sm hover-shadow rounded-5">
+                                    <div class="card-body p-0 position-relative rounded-top">
+                                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 small rounded-start mt-2">-20%</span>
+                                        <a href="#" class="product-img-link">
+                                            <img src="../img/capsac2.jpg" class="img-fluid w-100 rounded-top" alt="Cáp Momax">
+                                        </a>
                                     </div>
-                                    <div class="card-header">
-                                        <h3>Tai nghe 2</h3>
-                                        <p>380.000đ</p>
-                                        <div class="like-btn d-flex justify-content-between align-items-center px-3 py-2">
-                                            <button class="like-button d-flex align-items-center gap-2 border-0 bg-transparent text-dark p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart heart-icon" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                                </svg>
-                                                <span class="like">Thích</span>
+                                    <div class="card-header bg-white border-top-0 rounded-bottom">
+                                        <h6 class="card-title text-truncate">Cáp Momax USB-C to USB-C MAG Link 100W USB 2.0 có nam châm dài 2M DC36</h6>
+                                        <p class="mb-1">
+                                            <span class="text-danger fw-bold">450.000₫</span> 
+                                            <span class="text-muted text-decoration-line-through small">560.000₫</span>
+                                        </p>
+                                        <p class="small text-muted mb-2">Hỗ trợ sạc nhanh và truyền dữ liệu tốc độ cao...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="like-button btn btn-sm btn-outline-secondary rounded-pill">
+                                                <i class="bi bi-heart me-1"></i> Thích
                                             </button>
-                                            <span>Đã bán: 123</span>
+                                            <span class="small text-muted">Đã bán: 89</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a href="sanpham.html"><img src="../img/sacduphong1.jpg" class="img w-100" alt=""></a>
+                            
+                            <!-- Product 7 -->
+                            <div class="col">
+                                <div class="card h-100 product-card shadow-sm hover-shadow rounded-5">
+                                    <div class="card-body p-0 position-relative rounded-top">
+                                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 small rounded-start mt-2">-40%</span>
+                                        <a href="../HTML/sanpham1.html" class="product-img-link">
+                                            <img src="../img/capsac3.webp" class="img-fluid w-100 rounded-top" alt="Sạc ô tô Aukey">
+                                        </a>
                                     </div>
-                                    <div class="card-header">
-                                        <h3>Sạc dự phòng</h3>
-                                        <p>520.000đ</p>
-                                        <div class="like-btn d-flex justify-content-between align-items-center px-3 py-2">
-                                            <button class="like-button d-flex align-items-center gap-2 border-0 bg-transparent text-dark p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart heart-icon" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                                </svg>
-                                                <span class="like">Thích</span>
+                                    <div class="card-header bg-white border-top-0 rounded-bottom">
+                                        <h6 class="card-title text-truncate">Sạc ô tô Aukey 2C 65W CC-Y23</h6>
+                                        <p class="mb-1">
+                                            <span class="text-danger fw-bold">150.000₫</span> 
+                                            <span class="text-muted text-decoration-line-through small">250.000₫</span>
+                                        </p>
+                                        <p class="small text-muted mb-2">Hỗ trợ sạc nhanh Power Delivery...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="like-button btn btn-sm btn-outline-secondary rounded-pill">
+                                                <i class="bi bi-heart me-1"></i> Thích
                                             </button>
-                                            <span>Đã bán: 123</span>
+                                            <span class="small text-muted">Đã bán: 156</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a href="#"><img src="../img/headphone4.jpg" class="img w-100" alt=""></a>
+                            
+                            <!-- Product 8 -->
+                            <div class="col">
+                                <div class="card h-100 product-card shadow-sm hover-shadow rounded-5">
+                                    <div class="card-body p-0 position-relative rounded-top">
+                                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 small rounded-start mt-2">-70%</span>
+                                        <a href="#" class="product-img-link">
+                                            <img src="../img/capsac4.webp" class="img-fluid w-100 rounded-top" alt="Cáp Baseus">
+                                        </a>
                                     </div>
-                                    <div class="card-header">
-                                        <h3>Tai nghe 3</h3>
-                                        <p>460.000đ</p>
-                                        <div class="like-btn d-flex justify-content-between align-items-center px-3 py-2">
-                                            <button class="like-button d-flex align-items-center gap-2 border-0 bg-transparent text-dark p-0">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart heart-icon" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                                                </svg>
-                                                <span class="like">Thích</span>
+                                    <div class="card-header bg-white border-top-0 rounded-bottom">
+                                        <h6 class="card-title text-truncate">Cáp Baseus Crystal Shine USB-C to Lightning 1.2M</h6>
+                                        <p class="mb-1">
+                                            <span class="text-danger fw-bold">109.000₫</span> 
+                                            <span class="text-muted text-decoration-line-through small">350.000₫</span>
+                                        </p>
+                                        <p class="small text-muted mb-2">Hỗ trợ sạc nhanh và truyền dữ liệu...</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="like-button btn btn-sm btn-outline-secondary rounded-pill">
+                                                <i class="bi bi-heart me-1"></i> Thích
                                             </button>
-                                            <span>Đã bán: 123</span>
+                                            <span class="small text-muted">Đã bán: 212</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center">
-                            <button class="btn btn-outline-secondary rounded-pill w-25 mt-2">Xem tất cả sản phẩm</button>
+                            <a href="../HTML/tatcasanpham.html" class="w-25">
+                                <button class="btn btn-outline-secondary rounded-pill w-100">Xem tất cả sản phẩm</button>
+                            </a>
                         </div>
                     </div>
                 </div>

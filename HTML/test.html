@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../Bootstrap/jquery-3.7.1.js"></script>
-    <script src="../js/sanpham1.js"></script>
+    <script src="../js/test.js"></script>
     <title>Sản phẩm 1</title>
 </head>
 <body>
@@ -23,14 +23,14 @@
                         <img class="img-fluid" src="../img/H-removebg-preview.png" alt="DoubleH Shop" style="max-height: 40px;">
                     </a>
         
-                    <!-- Mobile Toggle Button -->
+                    <!-- nút  -->
                     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
         
                     <!-- Main Navbar Content -->
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <!-- Search Bar - Visible on desktop -->
+                        <!-- Search Bar -->
                         <div class="d-none d-lg-block ms-3 me-auto">
                             <form class="d-flex">
                                 <div class="input-group">
@@ -79,14 +79,22 @@
                                     Giỏ hàng
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-custom d-flex align-items-center" href="#">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav-link-custom d-flex align-items-center dropdown-toggle" href="../HTML/thongtindangnhap.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle me-1" viewBox="0 0 16 16">
                                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                                     </svg>
                                     Tài khoản
                                 </a>
+                                <ul class="dropdown-menu dropdown-menu-secondary dropdown-mega1">
+                                    <div class="row mx-0">
+                                        <div class="col">
+                                            <a class="dropdown-item" href="../HTML/dangky.html">Đăng nhập/Đăng ký</a>
+                                            <a class="dropdown-item" href="../HTML/thongtindangnhap.html">Thông tin khách hàng</a>
+                                        </div>
+                                    </div>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -178,199 +186,49 @@
         </div>
         
         <!-- section -->
-        
-        <div class="section min-vh-75">
-            <div class="container mt-5 bg-light p-3 box">
-                <header class="faq-header text-center">
-                    <div class="container">
-                        <h1 class="faq-title">Hỏi Đáp</h1>
-                        <p class="lead">Tìm câu trả lời cho những thắc mắc thường gặp</p>
-                    </div>
-                </header>
+        <div class="container">
+            <!-- Form Đăng nhập -->
+            <div id="login-form">
+                <h2>Đăng nhập</h2>
+                <div class="form-group">
+                    <label for="login-username">Tên đăng nhập:</label>
+                    <input type="text" id="login-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Mật khẩu:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div id="login-error" class="error"></div>
+                <button id="login-btn">Đăng nhập</button>
+                <div class="switch-form">
+                    Chưa có tài khoản? <a id="show-register">Đăng ký ngay</a>
+                </div>
+            </div>
             
-                <!-- Main Content -->
-                <main class="container mb-5">
-                    <!-- Tài khoản Section -->
-                    <section class="faq-category">
-                        <h2 class="category-title">Hỏi đáp về tài khoản</h2>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">1. Làm thế nào để tôi trở thành thành viên của DoubleH?</h3>
-                            <div class="faq-answer">
-                                <p>Quý khách vui lòng nhấn vào nút "Đăng ký" ở thanh menu trên cùng của màn hình (Đối với Desktop) hoặc tại góc trái màn hình, chọn biểu tượng Menu rồi chọn "Đăng ký" (Đối với Mobile).</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">2. Tại sao tôi không thể đăng nhập vào tài khoản của tôi?</h3>
-                            <div class="faq-answer">
-                                <p>Vui lòng kiểm tra lại tên đăng nhập và mật khẩu. Nếu vẫn không thể đăng nhập, quý khách có thể sử dụng tính năng "Quên mật khẩu" hoặc liên hệ hotline 1900 6750 để được hỗ trợ.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">3. Tôi có thể sử dụng chung tài khoản với người khác được không?</h3>
-                            <div class="faq-answer">
-                                <p>Mỗi tài khoản tại DoubleH chỉ nên được sử dụng bởi một người duy nhất để đảm bảo quyền lợi tích lũy điểm và bảo mật thông tin.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">4. Tại sao tôi nên đăng ký thành viên DoubleH?</h3>
-                            <div class="faq-answer">
-                                <p>Thành viên DoubleH sẽ được hưởng nhiều ưu đãi đặc biệt như tích lũy điểm đổi quà, giảm giá cho thành viên, nhận thông báo khuyến mãi sớm nhất và nhiều đặc quyền khác.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">5. DoubleH có chương trình ưu đãi nào hấp dẫn dành cho khách hàng thân thiết?</h3>
-                            <div class="faq-answer">
-                                <p>DoubleH có nhiều chương trình ưu đãi dành riêng cho khách hàng thân thiết như giảm giá theo cấp độ thành viên, voucher sinh nhật, ưu đãi đặc biệt trong các dịp lễ và tích lũy điểm đổi quà giá trị.</p>
-                            </div>
-                        </div>
-                    </section>
-            
-                    <!-- Đặt hàng Section -->
-                    <section class="faq-category">
-                        <h2 class="category-title">Hỏi đáp về đặt hàng</h2>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">1. Tôi có thể đặt hàng bằng những hình thức nào?</h3>
-                            <div class="faq-answer">
-                                <p>Quý khách có thể mua hàng tại DoubleH bằng những hình thức sau:</p>
-                                <ul>
-                                    <li>Đặt hàng trực tuyến tại website</li>
-                                    <li>Đặt hàng trực tiếp với tư vấn viên qua Hotline 1900 6750</li>
-                                    <li>Đặt hàng trực tuyến trên các sàn thương mại điện tử</li>
-                                    <li>Mua hàng trực tiếp tại các hệ thống cửa hàng</li>
-                                </ul>
-                                <p>DoubleH luôn khuyến khích quý khách tạo tài khoản và đặt hàng online để được hưởng các chính sách ưu đãi thành viên tốt hơn.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">2. Tôi cần hỗ trợ mua hàng, làm cách nào để liên hệ với tư vấn viên?</h3>
-                            <div class="faq-answer">
-                                <p>Quý khách có thể liên hệ với đội ngũ tư vấn viên của chúng tôi qua hotline 1900 6750 (miễn phí) hoặc chat trực tiếp trên website từ 8:00 - 21:00 hàng ngày.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">3. DoubleH có giới hạn về số lượng sản phẩm khi đặt hàng không?</h3>
-                            <div class="faq-answer">
-                                <p>Tùy thuộc vào từng chương trình khuyến mãi, một số sản phẩm có thể có giới hạn số lượng mua để đảm bảo công bằng cho tất cả khách hàng. Thông tin này sẽ được ghi rõ trên trang sản phẩm.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">4. Tôi muốn xem lại lịch sử đơn hàng đã mua?</h3>
-                            <div class="faq-answer">
-                                <p>Quý khách có thể xem lịch sử đơn hàng bằng cách đăng nhập tài khoản và vào mục "Lịch sử đơn hàng" trong phần tài khoản cá nhân.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">5. Tôi cần làm gì để thay đổi hoặc hủy bỏ đơn hàng đã đặt?</h3>
-                            <div class="faq-answer">
-                                <p>Quý khách vui lòng liên hệ ngay với chúng tôi qua hotline 1900 6750 để được hỗ trợ thay đổi hoặc hủy đơn hàng. Lưu ý chỉ có thể hủy đơn khi chưa được xử lý giao hàng.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">6. Tôi muốn khiếu nại/đổi trả hàng, quy trình thực hiện như thế nào?</h3>
-                            <div class="faq-answer">
-                                <p>Quý khách vui lòng liên hệ bộ phận chăm sóc khách hàng trong vòng 7 ngày kể từ khi nhận hàng. Chúng tôi sẽ hướng dẫn quý khách các bước khiếu nại/đổi trả theo chính sách bảo hành của DoubleH.</p>
-                            </div>
-                        </div>
-                    </section>
-            
-                    <!-- Thanh toán Section -->
-                    <section class="faq-category">
-                        <h2 class="category-title">Hỏi đáp về thanh toán</h2>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">1. Tôi có thể thanh toán đơn hàng bằng những hình thức nào?</h3>
-                            <div class="faq-answer">
-                                <p>Quý khách có thể thanh toán cho DoubleH bằng những hình thức sau:</p>
-                                <ul>
-                                    <li>Thanh toán tại chỗ (Ship COD)</li>
-                                    <li>Chuyển khoản trước: Khách hàng có thể chọn chuyển khoản trước vào tài khoản của DoubleH</li>
-                                    <li>Thanh toán qua ví điện tử (Momo, ZaloPay, VNPay)</li>
-                                    <li>Thanh toán bằng thẻ tín dụng/quốc tế</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-            
-                    <!-- Giao hàng Section -->
-                    <section class="faq-category">
-                        <h2 class="category-title">Hỏi đáp về giao hàng</h2>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">1. Tôi không ở Hồ Chí Minh, DoubleH có hỗ trợ giao hàng không?</h3>
-                            <div class="faq-answer">
-                                <p>DoubleH áp dụng giao hàng trên toàn quốc cho tất cả giá trị đơn hàng. Phí vận chuyển và thời gian giao hàng sẽ thay đổi tùy thuộc vào giá trị đơn hàng và từng khu vực cụ thể.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">2. Tôi có được hỗ trợ phí vận chuyển không?</h3>
-                            <div class="faq-answer">
-                                <p>DoubleH thường xuyên có chương trình miễn phí vận chuyển cho đơn hàng từ 500.000đ trở lên. Chi tiết các chương trình ưu đãi sẽ được cập nhật trên website.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h3 class="faq-question">3. Bao lâu thì tôi sẽ nhận được sản phẩm sau khi hoàn tất đặt hàng?</h3>
-                            <div class="faq-answer">
-                                <p>Thời gian giao hàng dự kiến:
-                                <ul>
-                                    <li>Nội thành Hồ Chí Minh: 1-2 ngày làm việc</li>
-                                    <li>Các tỉnh thành khác: 2-5 ngày làm việc tùy khu vực</li>
-                                </ul>
-                                Thời gian có thể thay đổi trong các dịp lễ, Tết hoặc do ảnh hưởng của thời tiết.</p>
-                            </div>
-                        </div>
-                    </section>
-            
-                    <!-- Question Form -->
-                    <section class="question-form">
-                        <h2 class="text-center mb-4">Gửi câu hỏi của bạn</h2>
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Họ và tên</label>
-                                <input type="text" class="form-control" id="name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Số điện thoại</label>
-                                <input type="tel" class="form-control" id="phone">
-                            </div>
-                            <div class="mb-3">
-                                <label for="category" class="form-label">Chủ đề câu hỏi</label>
-                                <select class="form-select" id="category">
-                                    <option value="account">Tài khoản</option>
-                                    <option value="order">Đặt hàng</option>
-                                    <option value="payment">Thanh toán</option>
-                                    <option value="delivery">Giao hàng</option>
-                                    <option value="other">Khác</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="question" class="form-label">Nội dung câu hỏi</label>
-                                <textarea class="form-control" id="question" rows="4" required></textarea>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary px-4 py-2">Gửi câu hỏi</button>
-                            </div>
-                        </form>
-                    </section>
-                </main>
+            <!-- Form Đăng ký -->
+            <div id="register-form" class="hidden">
+                <h2>Đăng ký tài khoản</h2>
+                <div class="form-group">
+                    <label for="register-username">Tên đăng nhập:</label>
+                    <input type="text" id="register-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Mật khẩu:</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Nhập lại mật khẩu:</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+                <div id="register-error" class="error"></div>
+                <button id="register-btn">Đăng ký</button>
+                <div class="switch-form">
+                    Đã có tài khoản? <a id="show-login">Đăng nhập ngay</a>
+                </div>
             </div>
         </div>
+
+        <!-- ... -->
 
         <!-- Footer -->
         <div class="footer container-fluid text-white pt-5 pb-3" id="foot">
