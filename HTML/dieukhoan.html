@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!--Thư viện icon-->
-    <link rel="stylesheet" href="../CSS/sanpham1.css">
+    <link rel="stylesheet" href="../CSS/dieukhoan.css">
     <link rel="shortcut icon" href="../img/H_1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../Bootstrap/jquery-3.7.1.js"></script>
-    <script src="../js/sanpham1.js"></script>
-    <title>Sản phẩm 1</title>
+    <title>Điều khoản dịch vụ</title>
 </head>
 <body>
     <div class="container-fluid p-0 min-vh-100">
@@ -23,14 +22,14 @@
                         <img class="img-fluid" src="../img/H-removebg-preview.png" alt="DoubleH Shop" style="max-height: 40px;">
                     </a>
         
-                    <!-- Mobile Toggle Button -->
+                    <!-- Nút navbar thu nhỏ -->
                     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
         
-                    <!-- Main Navbar Content -->
+                    <!-- Navbar -->
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <!-- Search Bar - Visible on desktop -->
+                        <!-- Thanh tìm kiếm -->
                         <div class="d-none d-lg-block ms-3 me-auto">
                             <form class="d-flex">
                                 <div class="input-group">
@@ -43,8 +42,6 @@
                                 </div>
                             </form>
                         </div>
-        
-                        <!-- Top Navigation Links -->
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link nav-link-custom d-flex align-items-center" href="../HTML/lienhe.html">
@@ -80,7 +77,7 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link nav-link-custom d-flex align-items-center dropdown-toggle" href="../HTML/thongtindangnhap.html">
+                                <a class="nav-link nav-link-custom d-flex align-items-center dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="../HTML/thongtindangnhap.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle me-1" viewBox="0 0 16 16">
                                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
@@ -102,7 +99,7 @@
             </nav>
         </div>
         
-        <!-- Secondary Navigation -->
+        <!-- Nav phụ -->
         <div class="container-fluid bg-primary py-2 d-none d-lg-block">
             <div class="container">
                 <ul class="nav justify-content-center">
@@ -133,7 +130,7 @@
             </div>
         </div>
         
-        <!-- Mobile Search - Hidden on desktop -->
+        <!-- Mobile Search -->
         <div class="container-fluid bg-dark py-2 d-lg-none">
             <div class="container">
                 <form class="d-flex">
@@ -150,151 +147,124 @@
         </div>
         
         <!-- section -->
-        <div class="section min-vh-75 d-flex justify-content-center align-items-center" style="padding: 20px; padding-top: 0;">
-            <div class="row d-flex justify-content-center align-items-center" style="width: 75%; margin-top: 50px;">
-                <div class="left col-6" id="anh">
-                    <div class="imgMain">
-                        <img src="../img/sacduphong1.jpg" id="anhMain" alt="" class="img-fluid thumb-img zoom-img" data-bs-toggle="modal" data-bs-target="#imageModal" style="cursor:pointer;">
+        <div class="section min-vh-75">
+            <div class="container mt-5 bg-light box">
+                <header class="terms-header text-center">
+                    <div class="container">
+                        <h1 class="terms-title">Điều khoản dịch vụ</h1>
+                        <p class="lead">Cam kết bảo mật và bảo vệ thông tin khách hàng</p>
                     </div>
-                    <div class="menuAnh d-flex justify-content-center flex-wrap rounded" style="height: auto; max-height: 160px; overflow-x: auto;">
-                        <img src="../img/sacduphong1.jpg" id="anhphu1" alt="" class="img-fluid thumb-img border ps-2" style="cursor:pointer; width: 100px; height: auto;">
-                        <img src="../img/sacduphong2.jpg" id="anhphu2" alt="" class="img-fluid thumb-img border ps-2" style="cursor:pointer; width: 100px; height: auto;">
-                        <img src="../img/sacduphong3.jpg" id="anhphu3" alt="" class="img-fluid thumb-img border ps-2" style="cursor:pointer; width: 100px; height: auto;">
-                    </div>
-                </div>
-                <div class="right col-6 align-items-center" style="padding: 20px; box-shadow: 0px 5px 13px gray;">
-                    <h2>Sạc dự phòng nnostyle PowerMag Slim 10000mAh (IM20PD)</h2>
-                    <p>Giá: 30.000 VNĐ</p>
-                    <p>Mô tả: Sạc dự phòng chất lượng cao giá thành rẻ phù hợp cho sinh viên, học sinh.</p>
-                    <div class="butt">
-                        <button class="btn btn-primary w-50" id="mua" style="background-color: rgb(255, 162, 0);height: 60px; border: 0;">Mua ngay</button>
-                        <button class="btn btn-primary w-25" id="giohang" style="background-color: rgb(255, 255, 255); height: 60px; border: 1px solid rgb(255, 162, 0);"><i class="bi bi-cart-fill" style="color:rgb(255, 162, 0) ;"></i><p style="color: rgb(255, 162, 0); font-size: 13px;">Thêm vào giỏ</p></button>
-                    </div>
-                    <div class="menu mb-3">
-                        <label class="form-label fw-bold">Màu sắc</label>
-                        <div class="row mb-2">
-                            <div class="col-6">
-                                <div class="color-option selected" data-color="Silver">
-                                    <div><span class="color-circle" style="background-color: #f1f1f1;"></span>Silver</div>
-                                    <div>600.000đ</div>
+                </header>
+            
+                <!-- Main Content -->
+                <main class="container mb-5">
+                    <section class="policy-section">
+                        <div class="intro-box p-4 mb-4">
+                            <p>Cám ơn quý khách đã quan tâm và truy cập vào website. Chúng tôi tôn trọng và cam kết sẽ bảo mật những thông tin mang tính riêng tư của Quý khách.</p>
+                            <p class="mb-0">Chính sách bảo mật sẽ giải thích cách chúng tôi tiếp nhận, sử dụng và (trong trường hợp nào đó) tiết lộ thông tin cá nhân của Quý khách.</p>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <h2 class="section-title">1. Thu thập thông tin cá nhân</h2>
+                                
+                                <div class="term-item mb-3">
+                                    <h4 class="term-subtitle">Thông tin thu thập</h4>
+                                    <ul class="term-list">
+                                        <li>Danh hiệu, tên, giới tính, email, địa chỉ</li>
+                                        <li>Địa chỉ giao hàng, số điện thoại</li>
+                                        <li>Chi tiết thanh toán bằng thẻ hoặc tài khoản ngân hàng</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="color-option" data-color="Gray">
-                                    <div><span class="color-circle" style="background-color: #bfbfbf;"></span>Gray</div>
-                                    <div>600.000đ</div>
+                                
+                                <div class="term-item mb-3">
+                                    <h4 class="term-subtitle">Mục đích sử dụng</h4>
+                                    <ul class="term-list">
+                                        <li>Xử lý đơn đặt hàng và cung cấp dịch vụ</li>
+                                        <li>Quản lý tài khoản, xác minh giao dịch trực tuyến</li>
+                                        <li>Nghiên cứu nhân khẩu học, gửi thông tin sản phẩm/dịch vụ</li>
+                                        <li>Chuyển thông tin cho bên thứ ba phục vụ giao hàng</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="term-item">
+                                    <h4 class="term-subtitle">Quyền kiểm soát thông tin</h4>
+                                    <ul class="term-list">
+                                        <li>Bạn có thể truy cập thông tin bằng cách đăng nhập tài khoản</li>
+                                        <li>Có quyền từ chối nhận thông tin tiếp thị bất cứ lúc nào</li>
+                                        <li>Cam kết bảo mật dữ liệu và không tiết lộ cho bên thứ ba</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                            <div class="row mb-2">
-                                <div class="col-6">
-                                    <div class="color-option" data-color="Lavender">
-                                        <div><span class="color-circle" style="background-color: #a695c7;"></span>Lavender</div>
-                                        <div>600.000đ</div>
+                        
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <h2 class="section-title">2. Bảo mật</h2>
+                                
+                                <div class="term-item">
+                                    <ul class="term-list">
+                                        <li>Áp dụng biện pháp kỹ thuật và an ninh phù hợp</li>
+                                        <li>Không chia sẻ thông tin thanh toán qua email</li>
+                                        <li>Nghiêm cấm mọi hình thức can thiệp vào hệ thống</li>
+                                        <li>Cung cấp thông tin khi có yêu cầu từ cơ quan pháp luật</li>
+                                        <li>Tuân thủ theo luật pháp Việt Nam</li>
+                                    </ul>
+                                    
+                                    <div class="warning-box mt-3 p-3">
+                                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                                        <strong>Cảnh báo:</strong> Mọi vi phạm sẽ bị tước bỏ quyền lợi và có thể bị truy tố trước pháp luật.
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <div class="color-option" data-color="Blue">
-                                        <div><span class="color-circle" style="background-color: #467489;"></span>Blue</div>
-                                        <div>600.000đ</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="section-title">3. Quyền lợi khách hàng</h2>
+                                
+                                <div class="benefit-grid">
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <i class="fas fa-user-edit"></i>
+                                        </div>
+                                        <div class="benefit-content">
+                                            <h4>Yêu cầu truy cập</h4>
+                                            <p>Quyền truy cập vào dữ liệu cá nhân của bạn</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <i class="fas fa-edit"></i>
+                                        </div>
+                                        <div class="benefit-content">
+                                            <h4>Yêu cầu chỉnh sửa</h4>
+                                            <p>Được sửa lại thông tin sai sót miễn phí</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <i class="fas fa-ban"></i>
+                                        </div>
+                                        <div class="benefit-content">
+                                            <h4>Từ chối tiếp thị</h4>
+                                            <p>Quyền yêu cầu ngưng sử dụng dữ liệu cho tiếp thị</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="color-option" data-color="Pink">
-                                        <div><span class="color-circle" style="background-color: #f7d6d0;"></span>Pink</div>
-                                        <div>600.000đ</div>
-                                    </div>
-                                </div>
-                            </div>
-        
-                    </div>
-                    <div class="d-flex align-items-center text-muted fs-6">
-                        <span class="me-2 d-flex align-items-center">
-                            <i class="bi bi-star-fill text-warning me-1"></i> 5
-                        </span>
-                        <span class="border-start mx-2 ps-2 info-hover">3 Đánh giá</span>
-                        <span class="border-start mx-2 ps-2 info-hover">0 Bình luận</span>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-box">
-                        <h5><strong>Mời bạn đánh giá</strong></h5>
-                        <div class="rating mb-3">
-                            <i class="bi bi-star-fill" data-rate="1"></i>
-                            <i class="bi bi-star-fill" data-rate="2"></i>
-                            <i class="bi bi-star-fill" data-rate="3"></i>
-                            <i class="bi bi-star-fill" data-rate="4"></i>
-                            <i class="bi bi-star-fill" data-rate="5"></i>
                         </div>
-                        <div class="mb-3 d-flex align-items-center gap-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="male" checked>
-                                <label class="form-check-label" for="male">Anh</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="female">
-                                <label class="form-check-label" for="female">Chị</label>
-                            </div>
-                            <input type="text" class="form-control ms-auto" placeholder="Nhập họ tên" style="max-width: 300px;">
+                        
+                        <div class="thank-you-box text-center mt-4 p-4">
+                            <h4><i class="fas fa-handshake mr-2"></i>Cảm ơn bạn đã tin tưởng và sử dụng dịch vụ của chúng tôi</h4>
                         </div>
-                        <div class="mb-3 row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Nhập số điện thoại">
-                            </div>
-                            <div class="col">
-                                <input type="email" class="form-control" placeholder="Nhập email">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Nhập đánh giá của bạn"></textarea>
-                        </div>
-                        <button class="btn btn-orange px-4 py-2 text-white">Gửi đánh giá</button>
-                    </div>
-                </div>
-                <div class="col-6" style="height: 450px; overflow-y: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th colspan="2" class="text-center">Đánh giá sản phẩm</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Nguyễn Văn A</td>
-                                <td>5 <i class="bi bi-star-fill text-warning me-1"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Nguyễn Văn B</td>
-                                <td>4 <i class="bi bi-star-fill text-warning me-1"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Nguyễn Văn C</td>
-                                <td>3 <i class="bi bi-star-fill text-warning me-1"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                    </section>
+                </main>
             </div>
         </div>
-        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                        <img src="../img/sacduphong1.jpg" alt="Ảnh lớn" class="img-fluid rounded shadow">
-                    </div>
-                    <div class="d-flex justify-content-center gap-2">
-                        <img src="../img/sacduphong1.jpg" class="img-thumbnail thumb-img" width="80" style="cursor:pointer;">
-                        <img src="../img/sacduphong2.jpg" class="img-thumbnail thumb-img" width="80" style="cursor:pointer;">
-                        <img src="../img/sacduphong3.jpg" class="img-thumbnail thumb-img" width="80" style="cursor:pointer;">
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- Footer -->
         <div class="footer container-fluid text-white pt-5 pb-3" id="foot">
             <div class="container">
@@ -304,9 +274,9 @@
                         <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Chính sách</h5>
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="../HTML/chinhsachthanhvien.html" class="text-white-50 text-decoration-none hover-text-primary">Chính sách thành viên</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Chính sách thanh toán</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Chính sách bảo hành</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Bảo mật thông tin</a></li>
+                            <li class="mb-2"><a href="../HTML/chinhsachthanhtoan.html" class="text-white-50 text-decoration-none hover-text-primary">Chính sách thanh toán</a></li>
+                            <li class="mb-2"><a href="../HTML/chinhsachbaohanh.html" class="text-white-50 text-decoration-none hover-text-primary">Chính sách bảo hành</a></li>
+                            <li class="mb-2"><a href="" class="text-white-50 text-decoration-none hover-text-primary">Bảo mật thông tin</a></li>
                         </ul>
                     </div>
         
@@ -314,10 +284,10 @@
                     <div class="col-md-6 col-lg-3">
                         <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Hỗ trợ</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn mua hàng</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn thanh toán</a></li>
+                            <li class="mb-2"><a href="../HTML/huongdanmuahang.html" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn mua hàng</a></li>
+                            <li class="mb-2"><a href="../HTML/huongdanthanhtoan.html" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn thanh toán</a></li>
                             <li class="mb-2"><a href="../HTML/cauhoithuonggap.html" class="text-white-50 text-decoration-none hover-text-primary">Câu hỏi thường gặp</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Tra cứu bảo hành</a></li>
+                            <li class="mb-2"><a href="../HTML/dieukhoan.html" class="text-white-50 text-decoration-none hover-text-primary">Điều khoản dịch vụ</a></li>
                         </ul>
                     </div>
         
@@ -325,10 +295,8 @@
                     <div class="col-md-6 col-lg-3">
                         <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Danh mục</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hãng Apple</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hãng Xiaomi</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Tai nghe bluetooth</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Phụ kiện laptop</a></li>
+                            <li class="mb-2"><a href="../HTML/sitemap.html" class="text-white-50 text-decoration-none hover-text-primary">Sitemap</a></li>
+                            <li class="mb-2"><a href="../HTML/thanhvien.html" class="text-white-50 text-decoration-none hover-text-primary">Thành viên</a></li>
                         </ul>
                     </div>
         

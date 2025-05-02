@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!--Thư viện icon-->
-    <link rel="stylesheet" href="../CSS/dangky.css">
+    <link rel="stylesheet" href="../CSS/sanpham.css">
     <link rel="shortcut icon" href="../img/H_1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../Bootstrap/jquery-3.7.1.js"></script>
-    <script src="../js/dangky.js"></script>
-    <title>Đăng ký tài khoản</title>
+    <script src="../js/sanpham.js"></script>
+    <title>Sạc nhanh 20W Apple MHJE3ZA</title>
 </head>
 <body>
     <div class="container-fluid p-0 min-vh-100">
@@ -80,7 +80,7 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link nav-link-custom d-flex align-items-center dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="../HTML/thongtindangnhap.html">
+                                <a class="nav-link nav-link-custom d-flex align-items-center dropdown-toggle" href="../HTML/thongtindangnhap.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle me-1" viewBox="0 0 16 16">
                                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
@@ -150,169 +150,236 @@
         </div>
         
         <!-- section -->
-        <div class="container-fluid">
-            <div class="row p-5">
-              <!-- Left: Form -->
-              <div class="col-lg-6 registration-container" id="registration-container">
-                <!-- Form đăng ký tài khoản -->
-                <div class="form-wrapper">
-                    <div class="form-header">
-                        <h2>Tạo tài khoản</h2>
-                        <p>Tham gia cộng đồng của chúng tôi để nhận nhiều ưu đãi hấp dẫn</p>
+        <div class="product-page min-vh-75 d-flex justify-content-center align-items-center py-4">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Ảnh sản phẩm -->
+                    <div class="col-lg-6">
+                        <div class="product-gallery">
+                            <div class="main-image-container mb-3">
+                                <img src="../img/capsac1_1.jpg" id="anhMain" alt="Sạc nhanh 20W Apple MHJE3ZA" 
+                                     class="img-fluid main-image rounded-3 shadow-sm" 
+                                     data-bs-toggle="modal" data-bs-target="#imageModal">
+                            </div>
+                            <div class="thumbnail-container d-flex justify-content-center gap-2 flex-wrap">
+                                <img src="../img/capsac1_1.jpg" alt="Thumbnail 1" 
+                                     class="thumbnail-img rounded-2 border" width="90">
+                                <img src="../img/capsac1_2.jpg" alt="Thumbnail 2" 
+                                     class="thumbnail-img rounded-2 border" width="90">
+                                <img src="../img/capsac1_3.webp" alt="Thumbnail 3" 
+                                     class="thumbnail-img rounded-2 border" width="90">
+                            </div>
+                        </div>
                     </div>
-          
-                    <form id="registrationForm" onsubmit="saveFormData(); return checkValid();">
-                        <div class="row g-3 mb-3">  
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" name="ho" id="ho" placeholder="Họ" onblur="checkHo()">
-                                    <label for="ho">Họ</label>
-                                    <span class="text-danger" id="hoErr"></span>
-                                </div>
+        
+                    <!-- Product Info Section -->
+                    <div class="col-lg-6">
+                        <div class="product-info p-4 rounded-3 shadow-sm">
+                            <h1 class="product-title mb-3">Sạc nhanh 20W Apple MHJE3ZA Chính hãng Apple Việt Nam</h1>
+                            
+                            <div class="price-section mb-3">
+                                <span class="current-price fs-3 fw-bold text-danger">490.000 ₫</span>
+                                <span class="original-price text-decoration-line-through text-muted ms-2">890.000 ₫</span>
+                                <span class="discount-badge bg-danger text-white px-2 py-1 rounded ms-2">-45%</span>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="ten" name="ten" placeholder="Tên" onblur="checkTen()">
-                                    <label for="lastName">Tên</label>
-                                    <span class="text-danger" id="tenErr"></span>
-                                </div>
-                            </div>              
-                        </div>
-          
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" onblur="checkEmail()">
-                                <label for="email">Email</label>
-                                <span class="text-danger" id="emailErr"></span>
+                            
+                            <div class="product-description mb-4">
+                                <p class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Dây chống rối</p>
+                                <p class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Hỗ trợ sạc nhanh PD 20W</p>
+                                <p class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Thiết kế nhỏ gọn</p>
+                                <p class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Bảo hành 12 tháng</p>
                             </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="sdt" name="sdt" placeholder="Số điện thoại" onblur="checkSDT()">
-                                <label for="sdt">Số điện thoại</label>
-                                <span class="text-danger" id="sdtErr"></span>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="diachi" name="diachi" placeholder="Địa chỉ" onblur="checkDiachi()">
-                                <label for="diachi">Địa chỉ</label>
-                                <span class="text-danger" id="diachiErr"></span>
-                            </div>
-                        </div>
-          
-          
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="mk" name="mk" placeholder="Mật khẩu" onblur="checkMK()">
-                                <label for="password">Mật khẩu</label>
-                                <span class="text-danger" id="mkErr"></span>
-                            </div>
-                        </div>
-          
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="xnmk" placeholder="Xác nhận mật khẩu" onblur="checkXNMK()">
-                                <label for="confirmPassword">Xác nhận mật khẩu</label>
-                                <span class="text-danger" id="xnmkErr"></span>
-                            </div>
-                        </div>  
-          
-                        <div class="d-grid mb-3">
-                            <button type="submit" class="btn btn-register btn-lg">
-                                <i class="fas fa-user-plus me-2"></i> Đăng ký
-                            </button>
-                        </div>
-          
-                        <div class="divider">
-                            <span class="divider-text">Tiếp tục với</span>
-                        </div>
-          
-                        <div class="social-login">
-                            <a href="#" class="social-btn google">
-                                <i class="fab fa-google"></i>
-                            </a>
-                            <a href="#" class="social-btn facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        <a href="#" class="social-btn linkedin">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-          
-                        <div class="login-link">
-                            Bạn đã có tài khoản? <a onclick="showLoginForm()">Đăng nhập</a>
-                        </div>
-                    </form>
-                </div>
-              </div>
-                <!-- Form đăng nhập -->
-                <div class="col-lg-6 login-container" id="login-container">
-                    <div class="form-wrapper">
-                        <div class="form-header">
-                            <h2>Đăng nhập</h2>
-                        </div>
-                        <form id="loginForm" class="form" onsubmit="return checkValidDN()" action="../HTML/thongtindangnhap.html">                            
-                            <div class="mb-3">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="dn" placeholder="name@example.com" onblur="checkDn()">
-                                    <label for="dn">Email hoặc số điện thoại</label>
-                                    <span class="text-danger" id="dnErr"></span>
-                                </div>
-                            </div>
-              
-                            <div class="mb-3">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="mkdn" placeholder="Mật khẩu" autocomplete="none">
-                                    <label for="mkdn">Mật khẩu</label>
-                                    <span class="text-danger" id="mkdnErr"></span>
-                                </div>
-                            </div>
-              
-                            <div class="d-grid mb-3">
-                                <button type="submit" class="btn btn-register btn-lg">
-                                    <i class="fas fa-user-plus me-2"></i>Đăng nhập
+                            
+                            <div class="action-buttons d-flex gap-3 mb-4">
+                                <button class="btn btn-warning flex-grow-1 py-2 fw-bold" id="giohang">
+                                    <i class="bi bi-cart-fill me-2"></i>Thêm vào giỏ hàng
                                 </button>
                             </div>
-              
-                            <div class="divider">
-                                <span class="divider-text">Tiếp tục với</span>
+                            
+                            <div class="product-meta d-flex align-items-center text-muted">
+                                <div class="rating-info me-3">
+                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                    <span>5.0</span>
+                                    <span class="ms-1">(3 đánh giá)</span>
+                                </div>
+                                <div class="sold-info">
+                                    <i class="bi bi-cart-check-fill me-1"></i>
+                                    <span>Đã bán 168</span>
+                                </div>
                             </div>
-              
-                            <div class="social-login">
-                                <a href="#" class="social-btn google">
-                                    <i class="fab fa-google"></i>
-                                </a>
-                                <a href="#" class="social-btn facebook">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-btn linkedin">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
+                        </div>
+                    </div>
+                    <!-- Chi tiết sản phẩm -->
+                    <div class="product-details-collapse col-lg-12 my-5">
+                        <div class="accordion" id="productDetailsAccordion">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="headingProductDetails">
+                                    <button class="accordion-button collapsed bg-light rounded rounded-2 fs-5 fw-bold" type="button" 
+                                            data-bs-toggle="collapse" data-bs-target="#productDetailCollapse" 
+                                            aria-expanded="false" aria-controls="productDetailCollapse">
+                                        <i class="bi bi-card-text me-2 text-primary"></i> THÔNG TIN CHI TIẾT SẢN PHẨM
+                                    </button>
+                                </h2>
+                                <div id="productDetailCollapse" class="accordion-collapse collapse" 
+                                     aria-labelledby="headingProductDetails" data-bs-parent="#productDetailsAccordion">
+                                    <div class="accordion-body p-0">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-hover mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-bold" style="width: 30%;">Thương hiệu</td>
+                                                        <td>Apple</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold">Mã sản phẩm</td>
+                                                        <td>MHJE3ZA</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold">Xuất xứ</td>
+                                                        <td>Trung Quốc</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold">Bảo hành</td>
+                                                        <td>12 tháng <span class="badge bg-success ms-2">CHÍNH HÃNG</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold">Cổng sạc</td>
+                                                        <td>
+                                                            <span class="badge bg-secondary me-1">USB-C PD</span>
+                                                            <span class="badge bg-secondary">Lightning</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold">Công suất</td>
+                                                        <td>20W <span class="text-success small ms-2"><i class="bi bi-lightning-charge-fill"></i> Hỗ trợ sạc nhanh</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold">Kích thước</td>
+                                                        <td>1500mm <span class="text-muted small">(Dây chống rối)</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-bold align-top">Tính năng nổi bật</td>
+                                                        <td>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Thiết kế nhỏ gọn, sang trọng</li>
+                                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tương thích MagSafe cho iPhone 12 trở lên</li>
+                                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Dây thiết kế chống rối</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-              
-                            <div class="login-link">
-                              Bạn chưa có tài khoản? <a onclick="showRegisterForm()">Đăng ký</a>
+                        </div>
+                    </div>
+  
+                    <!-- Review Form Section -->
+                    <div class="col-lg-6">
+                        <div class="review-form p-4 rounded-3 shadow-sm">
+                            <h3 class="mb-4"><i class="bi bi-pencil-square me-2"></i>Đánh giá sản phẩm</h3>
+                            
+                            <div class="rating-stars mb-4">
+                                <span class="me-2">Chất lượng:</span>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill" data-rate="1"></i>
+                                    <i class="bi bi-star-fill" data-rate="2"></i>
+                                    <i class="bi bi-star-fill" data-rate="3"></i>
+                                    <i class="bi bi-star-fill" data-rate="4"></i>
+                                    <i class="bi bi-star-fill" data-rate="5"></i>
+                                </div>
                             </div>
-                        </form>
+                            <div class="mb-3">
+                                <label class="form-label">Nội dung đánh giá</label>
+                                <textarea class="form-control" id="review-content" rows="4" 
+                                          placeholder="Hãy chia sẻ cảm nhận của bạn về sản phẩm..."></textarea>
+                            </div>
+                            
+                            <button class="btn btn-primary w-100 py-2 fw-bold" id="submit-review">
+                                <i class="bi bi-send-fill me-2"></i>Gửi đánh giá
+                            </button>
+                        </div>
+                    </div>
+        
+                    <!-- Reviews Section -->
+                    <div class="col-lg-6">
+                        <div class="reviews-container p-4 rounded-3 shadow-sm">
+                            <h3 class="mb-4"><i class="bi bi-chat-square-text-fill me-2"></i>Đánh giá từ khách hàng</h3>
+                            
+                            <div class="scroll-box">
+                                <div class="review-item mb-4 pb-3 border-bottom">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="mb-0">Nguyễn Văn A</h5>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted small mb-2">Đã mua ngày 15/10/2023</p>
+                                    <p>Sạc rất tốt, pin trâu, thiết kế đẹp. Mình rất hài lòng với sản phẩm này!</p>
+                                </div>
+                                
+                                <div class="review-item mb-4 pb-3 border-bottom">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="mb-0">Nguyễn Văn B</h5>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted small mb-2">Đã mua ngày 05/10/2023</p>
+                                    <p>Sản phẩm tốt nhưng hơi nặng so với kích thước. Sạc nhanh như quảng cáo.</p>
+                                </div>
+                                
+                                <div class="review-item mb-4 pb-3 border-bottom">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h5 class="mb-0">Nguyễn Văn C</h5>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                            <i class="bi bi-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted small mb-2">Đã mua ngày 28/09/2023</p>
+                                    <p>Giá cả hợp lý, chất lượng tạm được. Nên mua khi có khuyến mãi.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-          
-              <!-- Right: Image -->
-              <div class="col-lg-6 image-side d-none d-lg-block">
-                <div class="image-overlay">
-                  <div class="image-content">
-                    <h2>Welcome to Our Platform</h2>
-                    <p>Join thousands of professionals who are already benefiting from our services. Create your account today and unlock exclusive features designed to help you succeed.</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-
-        <!-- ... -->
-
+        </div>
+        
+        <!-- Image Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center p-4">
+                        <img src="../img/capsac1_1.jpg" alt="Sạc dự phòng" class="img-fluid rounded-3 modal-image">
+                    </div>
+                    <div class="modal-footer border-0 justify-content-center">
+                        <div class="thumbnail-container d-flex gap-2">
+                            <img src="../img/capsac1_1.jpg" class="thumbnail-img rounded-2 border" width="70">
+                            <img src="../img/capsac1_2.jpg" class="thumbnail-img rounded-2 border" width="70">
+                            <img src="../img/capsac1_3.webp" class="thumbnail-img rounded-2 border" width="70">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer -->
         <div class="footer container-fluid text-white pt-5 pb-3" id="foot">
             <div class="container">

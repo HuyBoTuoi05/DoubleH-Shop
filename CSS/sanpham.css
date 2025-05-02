@@ -1,0 +1,433 @@
+.dropdown-mega {
+    left: 0;
+    right: 0;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 600px;
+}
+.dropdown-mega1 {
+    right: 0;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px;
+    background-color: #cacaca;
+}
+
+.dropdown-item{
+    padding: 0;
+}
+.navbar-dark {
+    background-color: antiquewhite !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: #6c757d; /* Màu viền */
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(108, 117, 125, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.bg-primary {
+    background-color: #6e91b5 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(48, 5, 83);
+}
+
+.nav-link-custom {
+    transition: all 0.3s ease;
+}
+.nav-link-custom:hover {
+    color: #0066cc !important;
+    transform: translateY(-2px); /* Hiệu ứng nổi lên nhẹ */
+}
+.nav-link-custom1 {
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+.nav-link-custom1:hover {
+    color: rgb(34, 25, 67) !important;
+    transform: translateY(-2px); /* Hiệu ứng nổi lên nhẹ */
+}
+
+.nav-link-custom:hover svg {
+    fill: #0066cc; /* Màu icon khi hover */
+    transform: scale(1.1); /* Phóng to icon nhẹ */
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-top: 10px;
+    }
+    
+    .nav-item {
+        margin-bottom: 5px;
+    }
+    
+    .dropdown-mega .row {
+        display: block;
+    }
+    
+    .dropdown-mega .col-md-3 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+nav, .navbar, .header1 {
+    overflow: visible !important;
+    position: relative;
+    z-index: 100;
+}
+.dropdown-menu .dropdown-column {
+    flex: 2;
+    min-width: 180px;
+    padding: 0 10px;
+}
+.dropdown-menu .dropdown-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+
+/* footer */
+.footer {
+    background: linear-gradient(90deg, #1e1e2f, #2d2d44);
+}
+.hover-text-primary:hover {
+    color: #0d6efd !important;
+    transition: color 0.3s ease;
+}
+
+.hover-scale {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.2);
+}
+
+.border-bottom {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+
+/*                  ------------Thay đổi từ đây-------------                    */
+/*                  ------------Thay đổi từ đây-------------                    */
+/*                  ------------Thay đổi từ đây-------------                    */
+
+.product-page {
+    background-color: #f8f9fa;
+}
+
+.product-gallery {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.product-info, .review-form, .reviews-container {
+    background: white;
+    height: 100%;
+}
+
+.main-image {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+    max-height: 400px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.main-image:hover {
+    transform: scale(1.02);
+}
+
+
+.thumbnail-img {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    object-fit: cover;
+    height: 80px;
+}
+
+.thumbnail-img:hover {
+    border-color: #fd7e14 !important;
+    transform: translateY(-3px);
+}
+
+/* Product Info Styles */
+.product-title {
+    font-size: 1.75rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.current-price {
+    color: #dc3545;
+}
+
+.original-price {
+    font-size: 1rem;
+}
+
+.discount-badge {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.product-description p {
+    margin-bottom: 0.5rem;
+}
+
+/* Rating Stars */
+.rating i {
+    font-size: 1.25rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating i.active,
+.rating i:hover {
+    color: #ffc107;
+}
+
+/* Review Section */
+.scroll-box {
+    height: 400px;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.review-item:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Modal Styles */
+#imageModal .modal-dialog {
+    max-width: 50%;
+    margin: 20px auto;
+}
+
+#imageModal .modal-content {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header modal */
+#imageModal .modal-header {
+    padding: 0.5rem 1rem;
+    background-color: #343a40;
+}
+
+#imageModal .btn-close {
+    filter: invert(1);
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+#imageModal .btn-close:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Body modal - ảnh chính */
+#imageModal .modal-body {
+    padding: 1.5rem;
+    background-color: #fff;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageModal .modal-image {
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+#imageModal .modal-image:hover {
+    transform: scale(1.02);
+}
+
+/* Footer modal - thumbnail */
+#imageModal .modal-footer {
+    padding: 1rem;
+    background-color: #f8f9fa;
+}
+
+#imageModal .thumbnail-container {
+    padding: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+#imageModal .thumbnail-img {
+    cursor: pointer;
+    object-fit: cover;
+    height: 70px;
+    transition: all 0.2s ease;
+    border: 2px solid transparent !important;
+    opacity: 0.7;
+}
+
+#imageModal .thumbnail-img:hover {
+    opacity: 1;
+    border-color: #0d6efd !important;
+    transform: translateY(-3px);
+}
+
+#imageModal .thumbnail-img.active {
+    opacity: 1;
+    border-color: #0d6efd !important;
+}
+
+
+.main-image-container{
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#giohang {
+    transition: all 0.3s ease;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+#giohang:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Style cho phần thông tin chi tiết */
+.product-details-collapse .accordion-header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.product-details-collapse .accordion-button {
+    transition: all 0.3s ease;
+}
+
+.product-details-collapse .accordion-button:not(.collapsed) {
+    color: #0d6efd;
+}
+
+.product-details-collapse .accordion-button::after {
+    background-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.product-details-collapse .table {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.product-details-collapse .table td {
+    vertical-align: middle;
+    padding: 1rem;
+    border-color: #eee;
+}
+
+.product-details-collapse .table tr:last-child td {
+    border-bottom: 0;
+}
+
+.product-details-collapse .badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #fd7e14;
+    box-shadow: 0 0 0 0.25rem rgba(253, 126, 20, 0.25);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .product-title {
+        font-size: 1.5rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .action-buttons .btn {
+        width: 100%;
+    }
+}

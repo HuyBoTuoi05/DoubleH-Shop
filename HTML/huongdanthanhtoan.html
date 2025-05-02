@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!--Thư viện icon-->
-    <link rel="stylesheet" href="../CSS/dangky.css">
+    <link rel="stylesheet" href="../CSS/huongdanthanhtoan.css">
     <link rel="shortcut icon" href="../img/H_1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../Bootstrap/jquery-3.7.1.js"></script>
-    <script src="../js/dangky.js"></script>
-    <title>Đăng ký tài khoản</title>
+    <title>Hướng dẫn thanh toán</title>
 </head>
 <body>
     <div class="container-fluid p-0 min-vh-100">
@@ -23,14 +22,14 @@
                         <img class="img-fluid" src="../img/H-removebg-preview.png" alt="DoubleH Shop" style="max-height: 40px;">
                     </a>
         
-                    <!-- Mobile Toggle Button -->
+                    <!-- Nút navbar thu nhỏ -->
                     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
         
-                    <!-- Main Navbar Content -->
+                    <!-- Navbar -->
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <!-- Search Bar - Visible on desktop -->
+                        <!-- Thanh tìm kiếm -->
                         <div class="d-none d-lg-block ms-3 me-auto">
                             <form class="d-flex">
                                 <div class="input-group">
@@ -43,8 +42,6 @@
                                 </div>
                             </form>
                         </div>
-        
-                        <!-- Top Navigation Links -->
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link nav-link-custom d-flex align-items-center" href="../HTML/lienhe.html">
@@ -102,7 +99,7 @@
             </nav>
         </div>
         
-        <!-- Secondary Navigation -->
+        <!-- Nav phụ -->
         <div class="container-fluid bg-primary py-2 d-none d-lg-block">
             <div class="container">
                 <ul class="nav justify-content-center">
@@ -133,7 +130,7 @@
             </div>
         </div>
         
-        <!-- Mobile Search - Hidden on desktop -->
+        <!-- Mobile Search -->
         <div class="container-fluid bg-dark py-2 d-lg-none">
             <div class="container">
                 <form class="d-flex">
@@ -150,168 +147,73 @@
         </div>
         
         <!-- section -->
-        <div class="container-fluid">
-            <div class="row p-5">
-              <!-- Left: Form -->
-              <div class="col-lg-6 registration-container" id="registration-container">
-                <!-- Form đăng ký tài khoản -->
-                <div class="form-wrapper">
-                    <div class="form-header">
-                        <h2>Tạo tài khoản</h2>
-                        <p>Tham gia cộng đồng của chúng tôi để nhận nhiều ưu đãi hấp dẫn</p>
+        <div class="section min-vh-75">
+            <div class="container mt-5 bg-light box">
+                <header class="payment-guide-header text-center">
+                    <div class="container">
+                        <h1 class="payment-guide-title">Hướng dẫn thanh toán</h1>
+                        <p class="lead">Các phương thức thanh toán an toàn và tiện lợi tại DoubleH Shop</p>
                     </div>
-          
-                    <form id="registrationForm" onsubmit="saveFormData(); return checkValid();">
-                        <div class="row g-3 mb-3">  
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" name="ho" id="ho" placeholder="Họ" onblur="checkHo()">
-                                    <label for="ho">Họ</label>
-                                    <span class="text-danger" id="hoErr"></span>
+                </header>
+            
+                <!-- Main Content -->
+                <main class="container mb-5">
+                    <section class="policy-section">
+                        <div class="card mb-4 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="section-title">Lựa chọn thông tin tài khoản</h2>
+                                
+                                <div class="option-box mb-3 p-3">
+                                    <h4 class="option-title"><i class="fas fa-user-circle mr-2"></i> Đã có tài khoản</h4>
+                                    <p>Vui lòng nhập thông tin tên đăng nhập (email) và mật khẩu vào mục đã có tài khoản trên hệ thống</p>
+                                </div>
+                                
+                                <div class="option-box mb-3 p-3">
+                                    <h4 class="option-title"><i class="fas fa-user-plus mr-2"></i> Đăng ký tài khoản mới</h4>
+                                    <p>Điền các thông tin cá nhân để đăng ký tài khoản. Khi có tài khoản bạn sẽ dễ dàng theo dõi đơn hàng của mình</p>
+                                </div>
+                                
+                                <div class="option-box p-3">
+                                    <h4 class="option-title"><i class="fas fa-shopping-cart mr-2"></i> Mua hàng không cần tài khoản</h4>
+                                    <p>Nhấp chuột vào mục "Đặt hàng không cần tài khoản" để tiếp tục</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="ten" name="ten" placeholder="Tên" onblur="checkTen()">
-                                    <label for="lastName">Tên</label>
-                                    <span class="text-danger" id="tenErr"></span>
-                                </div>
-                            </div>              
                         </div>
-          
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" onblur="checkEmail()">
-                                <label for="email">Email</label>
-                                <span class="text-danger" id="emailErr"></span>
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="sdt" name="sdt" placeholder="Số điện thoại" onblur="checkSDT()">
-                                <label for="sdt">Số điện thoại</label>
-                                <span class="text-danger" id="sdtErr"></span>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="diachi" name="diachi" placeholder="Địa chỉ" onblur="checkDiachi()">
-                                <label for="diachi">Địa chỉ</label>
-                                <span class="text-danger" id="diachiErr"></span>
+                        
+                        <div class="card mb-4 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="section-title">Quy trình thanh toán</h2>
+                                <ul class="process-list">
+                                    <li>
+                                        <div class="process-icon"><i class="fas fa-edit"></i></div>
+                                        <div class="process-content">
+                                            <h4>Điền thông tin nhận hàng</h4>
+                                            <p>Nhập đầy đủ thông tin giao nhận và lựa chọn hình thức thanh toán, vận chuyển phù hợp</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="process-icon"><i class="fas fa-check-circle"></i></div>
+                                        <div class="process-content">
+                                            <h4>Xác nhận đơn hàng</h4>
+                                            <p>Xem lại thông tin đặt hàng, điền chú thích nếu cần và gửi đơn hàng</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-          
-          
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="mk" name="mk" placeholder="Mật khẩu" onblur="checkMK()">
-                                <label for="password">Mật khẩu</label>
-                                <span class="text-danger" id="mkErr"></span>
-                            </div>
+                        
+                        <div class="note-box p-4">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <strong>Sau khi nhận đơn hàng:</strong> Chúng tôi sẽ liên hệ qua điện thoại để xác nhận lại đơn hàng và địa chỉ của bạn.
                         </div>
-          
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="xnmk" placeholder="Xác nhận mật khẩu" onblur="checkXNMK()">
-                                <label for="confirmPassword">Xác nhận mật khẩu</label>
-                                <span class="text-danger" id="xnmkErr"></span>
-                            </div>
-                        </div>  
-          
-                        <div class="d-grid mb-3">
-                            <button type="submit" class="btn btn-register btn-lg">
-                                <i class="fas fa-user-plus me-2"></i> Đăng ký
-                            </button>
+                        
+                        <div class="thank-you-box text-center mt-4 p-4">
+                            <h4><i class="fas fa-heart mr-2"></i>Trân trọng cảm ơn quý khách!</h4>
                         </div>
-          
-                        <div class="divider">
-                            <span class="divider-text">Tiếp tục với</span>
-                        </div>
-          
-                        <div class="social-login">
-                            <a href="#" class="social-btn google">
-                                <i class="fab fa-google"></i>
-                            </a>
-                            <a href="#" class="social-btn facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        <a href="#" class="social-btn linkedin">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-          
-                        <div class="login-link">
-                            Bạn đã có tài khoản? <a onclick="showLoginForm()">Đăng nhập</a>
-                        </div>
-                    </form>
-                </div>
-              </div>
-                <!-- Form đăng nhập -->
-                <div class="col-lg-6 login-container" id="login-container">
-                    <div class="form-wrapper">
-                        <div class="form-header">
-                            <h2>Đăng nhập</h2>
-                        </div>
-                        <form id="loginForm" class="form" onsubmit="return checkValidDN()" action="../HTML/thongtindangnhap.html">                            
-                            <div class="mb-3">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="dn" placeholder="name@example.com" onblur="checkDn()">
-                                    <label for="dn">Email hoặc số điện thoại</label>
-                                    <span class="text-danger" id="dnErr"></span>
-                                </div>
-                            </div>
-              
-                            <div class="mb-3">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="mkdn" placeholder="Mật khẩu" autocomplete="none">
-                                    <label for="mkdn">Mật khẩu</label>
-                                    <span class="text-danger" id="mkdnErr"></span>
-                                </div>
-                            </div>
-              
-                            <div class="d-grid mb-3">
-                                <button type="submit" class="btn btn-register btn-lg">
-                                    <i class="fas fa-user-plus me-2"></i>Đăng nhập
-                                </button>
-                            </div>
-              
-                            <div class="divider">
-                                <span class="divider-text">Tiếp tục với</span>
-                            </div>
-              
-                            <div class="social-login">
-                                <a href="#" class="social-btn google">
-                                    <i class="fab fa-google"></i>
-                                </a>
-                                <a href="#" class="social-btn facebook">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-btn linkedin">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </div>
-              
-                            <div class="login-link">
-                              Bạn chưa có tài khoản? <a onclick="showRegisterForm()">Đăng ký</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-          
-              <!-- Right: Image -->
-              <div class="col-lg-6 image-side d-none d-lg-block">
-                <div class="image-overlay">
-                  <div class="image-content">
-                    <h2>Welcome to Our Platform</h2>
-                    <p>Join thousands of professionals who are already benefiting from our services. Create your account today and unlock exclusive features designed to help you succeed.</p>
-                  </div>
-                </div>
-              </div>
+                    </section>
+                </main>
             </div>
-          </div>
-
-        <!-- ... -->
+        </div>
 
         <!-- Footer -->
         <div class="footer container-fluid text-white pt-5 pb-3" id="foot">

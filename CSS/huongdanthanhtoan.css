@@ -135,138 +135,121 @@ nav, .navbar, .header1 {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-
 /*                  ------------Thay đổi từ đây-------------                    */
 /*                  ------------Thay đổi từ đây-------------                    */
 /*                  ------------Thay đổi từ đây-------------                    */
 
-.scroll-box {
-    height: 300px;
-    overflow-y: auto;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 5px;
-}
-.scroll-box::-webkit-scrollbar {
-    width: 6px;
+.payment-guide-header {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e9ecef;
 }
 
-.scroll-box::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
+.payment-guide-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
 }
 
-.scroll-box::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-.zoom-img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    border-radius: 2px;
-    overflow: hidden;
-}
-.imgMain {
-    overflow: hidden;
-    position: relative;
-    width: 100%; 
-}
-.zoom-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-}
-
-.zoom-img::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    pointer-events: none;
-    background: radial-gradient(ellipse at center, rgba(255,255,255,0) 50%, rgba(255,255,255,0.2) 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.zoom-img:hover::after {
-    opacity: 1;
-}
-.info-hover {
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-    cursor: pointer;
-}
-.info-hover:hover {
-    color: #ff7b00;
-    text-decoration: underline;
-    font-weight: 500;
-}
-.color-option {
-    border: 1px solid #ddd;
+.policy-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
     border-radius: 8px;
-    padding: 10px;
-    min-width: 120px;
-    text-align: center;
-    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+}
+
+.option-box {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #3498db;
     transition: all 0.3s ease;
 }
 
-.color-option:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.option-box:hover {
+    background-color: #e9f7fe;
+    transform: translateX(5px);
 }
 
-.color-option.selected {
-    border: 2px solid #fd7e14; 
+.option-title {
+    color: #2980b9;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
-.color-circle {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    margin-right: 6px;
-    vertical-align: middle;
+.process-list {
+    list-style: none;
+    padding-left: 0;
 }
-#mua:hover {
-    color: rgb(244, 0, 0);
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-    border: 0px;
+
+.process-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #eee;
 }
-#giohang:hover {
+
+.process-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.process-icon {
+    background-color: #3498db;
     color: white;
-    border: 1px solid rgb(255, 162, 0);
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-}
-.rating i {
-    font-size: 2rem;
-    color: #ccc;
-    cursor: pointer;
-    transition: color 0.2s;
-}
-.rating i.active {
-    color: #fca311;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
 }
 
-.form-check-input:checked {
-    background-color: #fca311;
-    border-color: #fca311;
+.process-content h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
 }
-.btn-orange {
-    background-color: #f15a24;
-    border: none;
+
+.note-box {
+    background-color: #f1f8fe;
+    border-radius: 8px;
+    color: #2c3e50;
+    border-left: 4px solid #e74c3c;
 }
-.btn-orange:hover {
-    background-color: #e14c1e;
+
+.thank-you-box {
+    background-color: #f1f8fe;
+    border-radius: 8px;
+    color: #2c3e50;
 }
-.form-control:focus {
-    box-shadow: none;
-    border-color: #fca311;
-}
-.form-box {
-    height: 450px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    background: #fff;
+
+@media (max-width: 768px) {
+    .payment-guide-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .process-list li {
+        flex-direction: column;
+    }
+    
+    .process-icon {
+        margin-bottom: 1rem;
+    }
 }

@@ -135,166 +135,65 @@ nav, .navbar, .header1 {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/*                  ------------Thay đổi từ đây-------------                    */
-/*                  ------------Thay đổi từ đây-------------                    */
-/*                  ------------Thay đổi từ đây-------------                    */
 
-/* CSS cải tiến cho bản đồ tĩnh */
-.store-location-section {
-    background-color: #f8f9fa;
+/*                  ------------Thay đổi từ đây-------------                    */
+/*                  ------------Thay đổi từ đây-------------                    */
+/*                  ------------Thay đổi từ đây-------------                    */
+.tree-sitemap {
+    background-color: #f8fafc;
+    min-height: 100vh;
 }
 
-.box-container {
-    margin-bottom: 10px;
+.tree-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tree {
+    position: relative;
+    padding-left: 0;
+    list-style: none;
+}
+
+.tree ul {
+    padding-left: 40px;
+    position: relative;
+}
+
+.tree li {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tree-node {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-.hero-section {
-    border-radius: 10px;
-    background: linear-gradient(135deg, #2c02d2 0%, #f70000 100%);
-    color: white;
-    padding: 4rem 0;
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+.tree-node a {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.store-map-container {
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid #dee2e6;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.tree-node a:hover {
+    color: #2c5282;
+    text-decoration: underline;
 }
 
-.static-map-wrapper {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
+/* Đường kẻ dọc */
+.tree ul:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 1px;
+    background-color: #cbd5e0;
 }
 
-.static-map-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.map-actions {
-    background: #f8f9fa;
-    padding: 10px;
-    border-radius: 0 0 8px 8px;
-}
-
-.store-search-box .input-group {
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-
-.store-search-box .form-control {
-    border-radius: 8px 0 0 8px !important;
-    border: none;
-    padding: 12px 15px;
-    background: #f8f9fa;
-}
-
-.store-search-box .btn {
-    border-radius: 0 8px 8px 0 !important;
-    padding: 0 20px;
-    background: #2c02d2;
-    border: none;
-}
-
-.store-list {
-    max-height: 430px;
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-.store-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-left: 3px solid transparent;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-}
-
-.store-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.store-card.active {
-    border-left: 3px solid #2c02d2;
-    background-color: #f5f7ff;
-}
-
-.store-card h5 {
-    color: #2c3e50;
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-    font-weight: 600;
-}
-
-.store-card p {
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-}
-
-.store-card i {
-    margin-right: 8px;
-}
-
-.store-card .btn {
-    transition: all 0.2s ease;
-    font-size: 0.85rem;
-}
-
-.store-card .btn:hover {
-    background: #2c02d2;
-    color: white;
-}
-
-.store-card .badge {
-    font-size: 0.75rem;
-    padding: 4px 8px;
-}
-
-/* Scrollbar */
-.store-list::-webkit-scrollbar {
-    width: 6px;
-}
-
-.store-list::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-}
-
-.store-list::-webkit-scrollbar-thumb {
-    background: #a8a8a8;
-    border-radius: 10px;
-}
-
-.store-list::-webkit-scrollbar-thumb:hover {
-    background: #8e8e8e;
-}
-
-@media (max-width: 992px) {
-    .static-map-wrapper {
-        height: 350px;
-    }
-    
-    .store-list {
-        max-height: none;
-    }
-    
-    .hero-section {
-        padding: 3rem 0;
-    }
-}

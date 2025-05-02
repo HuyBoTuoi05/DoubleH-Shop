@@ -11,10 +11,8 @@
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../Bootstrap/jquery-3.7.1.js"></script>
     <script src="../js/hethongcuahang.js"></script>
-    <link rel="preconnect" href="https://basemaps.cartocdn.com">
-    <link rel="preconnect" href="https://unpkg.com">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <title>Hệ thống cửa hàng</title>
 </head>
 <body>
@@ -84,7 +82,7 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link nav-link-custom d-flex align-items-center dropdown-toggle" href="../HTML/thongtindangnhap.html">
+                                <a class="nav-link nav-link-custom d-flex align-items-center dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="../HTML/thongtindangnhap.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle me-1" viewBox="0 0 16 16">
                                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
@@ -154,7 +152,6 @@
         </div>
         
         <!-- section -->
-        <!-- section -->
         <section class="store-location-section py-5 bg-light">
             <div class="container box-container">
                 <div class="hero-section">
@@ -166,8 +163,25 @@
                 <div class="row g-4">
                     <!-- Phần bản đồ -->
                     <div class="col-lg-8">
-                        <div class="store-map-container shadow-sm rounded overflow-hidden">
-                            <div id="simple-store-map" class="store-map"></div>
+                        <div class="store-map-container">
+                            <div class="static-map-wrapper">
+                                <iframe 
+                                    width="100%" 
+                                    height="500px" 
+                                    frameborder="0" 
+                                    scrolling="no" 
+                                    marginheight="0" 
+                                    marginwidth="0" 
+                                    src="https://www.openstreetmap.org/export/embed.html?bbox=106.6800,10.8100,106.7000,10.8300&layer=mapnik&marker=10.8189,106.6880#10.8189/106.6880/16">
+                                </iframe>
+                            </div>
+                            <div class="map-actions text-center mt-3">
+                                <a href="https://www.openstreetmap.org/?mlat=10.8189&mlon=106.6880#map=16/10.8189/106.6880" 
+                                   target="_blank" 
+                                   class="btn btn-sm btn-outline-primary">
+                                   <i class="bi bi-arrow-up-right-square"></i> Xem bản đồ lớn
+                                </a>
+                            </div>
                         </div>
                     </div>
                     
@@ -183,49 +197,68 @@
                         </div>
                         
                         <div class="store-list">
-                            <div class="store-card active">
-                                <h5>Cửa hàng Gò Vấp 1</h5>
+                            <div class="store-card active" data-store="1">
+                                <h5><i class="bi bi-shop-window text-primary"></i> Cửa hàng Gò Vấp 1</h5>
                                 <p class="text-muted mb-1">
-                                    <i class="bi bi-geo-alt-fill text-primary"></i> 123 Quang Trung, P.10
+                                    <i class="bi bi-geo-alt-fill text-primary"></i> 14 Nguyễn Văn Bảo, P.4
                                 </p>
                                 <p class="text-muted mb-1">
                                     <i class="bi bi-telephone-fill text-primary"></i> 0901 234 567
                                 </p>
-                                <p class="text-muted">
+                                <p class="text-muted mb-2">
                                     <i class="bi bi-clock-fill text-primary"></i> 8:00 - 22:00
                                 </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-compass"></i> Chỉ đường
+                                    </button>
+                                    <span class="badge bg-primary">Mở cửa</span>
+                                </div>
                             </div>
                             
-                            <div class="store-card">
-                                <h5>Cửa hàng Gò Vấp 2</h5>
+                            <div class="store-card" data-store="2">
+                                <h5><i class="bi bi-shop-window text-primary"></i> Cửa hàng Gò Vấp 2</h5>
                                 <p class="text-muted mb-1">
                                     <i class="bi bi-geo-alt-fill text-primary"></i> 456 Lê Đức Thọ, P.15
                                 </p>
                                 <p class="text-muted mb-1">
                                     <i class="bi bi-telephone-fill text-primary"></i> 0902 345 678
                                 </p>
-                                <p class="text-muted">
+                                <p class="text-muted mb-2">
                                     <i class="bi bi-clock-fill text-primary"></i> 8:30 - 21:30
                                 </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-compass"></i> Chỉ đường
+                                    </button>
+                                    <span class="badge bg-primary">Mở cửa</span>
+                                </div>
                             </div>
                             
-                            <div class="store-card">
-                                <h5>Cửa hàng Gò Vấp 3</h5>
+                            <div class="store-card" data-store="3">
+                                <h5><i class="bi bi-shop-window text-primary"></i> Cửa hàng Gò Vấp 3</h5>
                                 <p class="text-muted mb-1">
                                     <i class="bi bi-geo-alt-fill text-primary"></i> 789 Nguyễn Oanh, P.17
                                 </p>
                                 <p class="text-muted mb-1">
                                     <i class="bi bi-telephone-fill text-primary"></i> 0903 456 789
                                 </p>
-                                <p class="text-muted">
+                                <p class="text-muted mb-2">
                                     <i class="bi bi-clock-fill text-primary"></i> 8:00 - 22:00
                                 </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-compass"></i> Chỉ đường
+                                    </button>
+                                    <span class="badge bg-success">Mới</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- ... -->
 
         <!-- Footer -->
@@ -237,9 +270,9 @@
                         <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Chính sách</h5>
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="../HTML/chinhsachthanhvien.html" class="text-white-50 text-decoration-none hover-text-primary">Chính sách thành viên</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Chính sách thanh toán</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Chính sách bảo hành</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Bảo mật thông tin</a></li>
+                            <li class="mb-2"><a href="../HTML/chinhsachthanhtoan.html" class="text-white-50 text-decoration-none hover-text-primary">Chính sách thanh toán</a></li>
+                            <li class="mb-2"><a href="../HTML/chinhsachbaohanh.html" class="text-white-50 text-decoration-none hover-text-primary">Chính sách bảo hành</a></li>
+                            <li class="mb-2"><a href="../HTML/dieukhoan.html" class="text-white-50 text-decoration-none hover-text-primary">Điều khoản dịch vụ</a></li>
                         </ul>
                     </div>
         
@@ -247,9 +280,9 @@
                     <div class="col-md-6 col-lg-3">
                         <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Hỗ trợ</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn mua hàng</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn thanh toán</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Câu hỏi thường gặp</a></li>
+                            <li class="mb-2"><a href="../HTML/huongdanmuahang.html" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn mua hàng</a></li>
+                            <li class="mb-2"><a href="../HTML/huongdanthanhtoan.html" class="text-white-50 text-decoration-none hover-text-primary">Hướng dẫn thanh toán</a></li>
+                            <li class="mb-2"><a href="../HTML/cauhoithuonggap.html" class="text-white-50 text-decoration-none hover-text-primary">Câu hỏi thường gặp</a></li>
                             <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Tra cứu bảo hành</a></li>
                         </ul>
                     </div>
@@ -258,10 +291,8 @@
                     <div class="col-md-6 col-lg-3">
                         <h5 class="fw-bold mb-4 text-uppercase border-bottom pb-2">Danh mục</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hãng Apple</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Hãng Xiaomi</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Tai nghe bluetooth</a></li>
-                            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none hover-text-primary">Phụ kiện laptop</a></li>
+                            <li class="mb-2"><a href="../HTML/sitemap.html" class="text-white-50 text-decoration-none hover-text-primary">Sitemap</a></li>
+                            <li class="mb-2"><a href="../HTML/thanhvien.html" class="text-white-50 text-decoration-none hover-text-primary">Thành viên</a></li>
                         </ul>
                     </div>
         
